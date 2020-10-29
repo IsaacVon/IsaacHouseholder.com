@@ -1,14 +1,43 @@
+/* Generic */
+
+p {
+  color: #2C2D52;
+  text-align: justify;
+}
+
+.profile {
+  width: 162px;
+  margin-top: 128px;
+}
+
 .app {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   margin: 5px;
   display: grid;
   place-items: center;
 }
 
 .maxWidthContainer {
-  background-color: green;
+  /* background-color: green; */
   width: 70vw;
   max-width: 1000px;
   display: grid;
   place-items: center;
+}
+
+
+
+
+
+/* Desktop */
+
+
+
+
+
+/* Mobile */
+
+.profileMobile {
+  width: 162px;
+  margin-top: 80px;
 }
