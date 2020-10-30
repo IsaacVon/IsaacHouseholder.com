@@ -4,13 +4,13 @@ export default function Navigation() {
   return (
     <>
 
-      <p>Objective</p>
-      <p>Portfolio</p>
-      <p>Experience</p>
-      <p>Education</p>
-      <p>Skills</p>
-      <p>Letters of Recommendation</p>
-      <p>Hobbies</p>
+      <h3>Objective</h3>
+      <h3 className="color">Portfolio</h3>
+      <h3>Experience</h3>
+      <h3>Education</h3>
+      <h3>Skills</h3>
+      <h3 className="color">Letters of Recommendation</h3>
+      <h3>Hobbies</h3>
     </>
   );
 }

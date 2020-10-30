@@ -1,11 +1,5 @@
 import React from "react";
 
-
 export default function Hobbies() {
-
-  return (
-    <p>
-      Hobbies
-    </p>
-  );
+  return <h4 className="color">Hobbies</h4>;
 }

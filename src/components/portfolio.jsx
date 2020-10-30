@@ -6,6 +6,7 @@ import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
 export default function Portfolio() {
   return (
     <div className="portfolioBackground">
+
       <div className="portfolioContainer">
         <div className="portfolioIconWhatGrows">
           <a href="https://www.whatgrows.org/" target="_blank">

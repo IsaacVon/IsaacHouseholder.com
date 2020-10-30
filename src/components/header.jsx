@@ -6,11 +6,11 @@ export default function Header() {
     <>
       <img src={profile} alt="profile" className="profile" />
 
-      <p>Isaac Householder</p>
-      <p>Bachelor of Science - Mechanical Engineering</p>
-      <p>Irvine, California</p>
-      <p>IsaacHouseholder@gmail.com</p>
-      <p>714.496.7154</p>
+      <h1 className="color">Isaac Householder</h1>
+      <h2>Bachelor of Science - Mechanical Engineering</h2>
+      <h2>Irvine, California</h2>
+      <h2>IsaacHouseholder@gmail.com</h2>
+      <h2>714.496.7154</h2>
     </>
   );
 }

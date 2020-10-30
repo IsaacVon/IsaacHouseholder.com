@@ -1,11 +1,5 @@
 import React from "react";
 
-
 export default function Experience() {
-
-  return (
-    <p>
-      Experience
-    </p>
-  );
+  return <h4 className="color">Experience</h4>;
 }

@@ -1,11 +1,5 @@
 import React from "react";
 
-
 export default function LettersOfRecommendation() {
-
-  return (
-    <p>
-      LettersOfRecommendation
-    </p>
-  );
+  return <h4 className="color">LettersOfRecommendation</h4>;
 }
