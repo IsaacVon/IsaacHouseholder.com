@@ -1,7 +1,7 @@
 /* Generic */
 
 p {
-  color: #2C2D52;
+  color: #2c2d52;
   text-align: justify;
 }
 
@@ -12,32 +12,93 @@ p {
 
 .app {
   /* background-color: lightblue; */
-  margin: 5px;
   display: grid;
   place-items: center;
 }
 
 .maxWidthContainer {
-  /* background-color: green; */
-  width: 70vw;
-  max-width: 1000px;
+  background-color: lightblue;
+  height: 200px;
   display: grid;
   place-items: center;
 }
 
+.socialLinkBackground {
+  background-image: url(./assets/swirlBackground.jpg);
+  background-position: -2px;
+  height: 82px;
+  width: 100vw;
+  max-width: 1000px;
+}
 
+.socialLinkPaper {
+  background-color: white;
+  margin: 2px 0px;
+  height: 78px;
+  display: grid;
+  place-items: center;
+}
 
-
+.socialLinkContainer img {
+  height: 31px;
+  margin: 0px 14px;
+}
 
 /* Desktop */
 
-
-
-
-
 /* Mobile */
 
-.profileMobile {
-  width: 162px;
-  margin-top: 80px;
+/* Media Queries */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+@media only screen and (max-width: 1000px) {
+  .socialLinkBackground {
+    background-color: green;
+  }
+
+  .profile {
+    width: 162px;
+    margin-top: 80px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 894px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1070px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1170px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1700px) {
 }

@@ -17,8 +17,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div class="app">
-        <div class="maxWidthContainer">
+      <div className="app">
+        <div className="maxWidthContainer">
           <Header />
           <SocialLinks />
           <Navigation />
