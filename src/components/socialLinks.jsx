@@ -8,13 +8,16 @@ export default function SocialLinks() {
     <div className="socialLinkBackground">
       <div className="socialLinkPaper">
         <div className="socialLinkContainer">
-          <a href="https://github.com/IsaacVon">
+          <a href="https://github.com/IsaacVon" target="_blank">
             <img src={gitHub} alt="gitHub" />
           </a>
-          <a href="mailto:isaachouseholder@gmail.com">
+          <a href="mailto:isaachouseholder@gmail.com" target="_blank">
             <img src={gmail} alt="gmail" />
           </a>
-          <a href="https://www.linkedin.com/in/isaachouseholder/">
+          <a
+            href="https://www.linkedin.com/in/isaachouseholder/"
+            target="_blank"
+          >
             <img src={linkedIn} alt="linkedIn" />
           </a>
         </div>
