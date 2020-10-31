@@ -35,8 +35,7 @@ h4 {
   margin-bottom: 30px;
 }
 
-
-.objectiveContainer{
+.objectiveContainer {
   margin-top: 500px;
 }
 
@@ -44,7 +43,118 @@ h4 {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  
+}
+
+.experienceContainer {
+  max-width: 580px;
+  display: grid;
+  place-items: center;
+}
+
+.companyName {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.companyDescription {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.companyDescriptioUnderImage {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 475px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.jobContainer {
+  margin-top: 10px;
+  width: 580px;
+  display: grid;
+  place-items: center;
+}
+.jobContainerImage {
+  margin-top: 10px;
+  width: 580px;
+  display: grid;
+  place-items: center;
+}
+
+.jobTitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.jobDetails {
+  padding-inline-start: 15px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+}
+
+.karmaPhotoContainer {
+  background: url(./assets/companyImages/karma.jpg);
+  background-size: 100%;
+  width: 475px;
+  height: 256px;
+
+  margin-top: 50px;
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+
+  display: grid;
+  place-items: center;
+}
+
+.dougansPhotoContainer {
+  background: url(./assets/companyImages/dougans.jpg);
+  background-size: 100%;
+  width: 475px;
+  height: 316px;
+  margin-top: 50px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.karmaTitle {
+  color: white;
+  position: relative;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 15px;
+  top: 104px;
+}
+
+.dougansTitle {
+  color: white;
+  position: relative;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 15px;
+  top: 128px;
 }
 
 /* Colored text */
