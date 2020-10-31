@@ -157,8 +157,31 @@ h4 {
   top: 128px;
 }
 
-.spacer{
-  height:300px;
+.spacer {
+  height: 300px;
+}
+
+.skillGenre {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 22px;
+}
+
+.skillName {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.skillContainer {
+  width: 400px;
+}
+
+.lettersOfRecommendationTitleSpacing {
+  margin-top: 0px;
 }
 
 /* Colored text */
@@ -207,6 +230,59 @@ h4 {
   place-items: center;
 }
 
+
+.lettersOfRecommendationContainer{
+  width: 100vw;
+  max-width: 580px;
+}
+
+.lettersOfRecommendationLine {
+  background-image: url(./assets/swirlBackground.jpg);
+  background-position: -2px;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.bobsLetter {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.lettersOfRecommendationBody {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: justify;
+}
+
+.lettersOfRecommendationName {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.lettersOfRecommendationTitle {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: justify;
+}
+.lettersOfRecommendationLink {
+  cursor: pointer;
+  text-decoration-line: underline;
+  margin-top: 100px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
+}
+
+
 .socialLinkContainer img {
   height: 31px;
   margin: 0px 14px;
@@ -250,7 +326,6 @@ h4 {
   font-size: 14px;
   line-height: 13px;
   margin-block-start: 22px;
-
 }
 
 .universityDegree {
