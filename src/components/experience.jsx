@@ -30,6 +30,8 @@ export default function Experience() {
           <li>Holding open houses and advertising for the event</li>
         </ul>
       </div>
+      <div className="spacer"></div>
+
       {/* Karma */}
       <div className="jobContainerImage">
         <div className="karmaPhotoContainer">
@@ -86,6 +88,8 @@ export default function Experience() {
           </li>
         </ul>
       </div>
+      <div className="spacer"></div>
+
       {/* Bourns */}
       <div className="jobContainer">
         <p className="companyName">Bourns Electronics</p>
@@ -119,7 +123,9 @@ export default function Experience() {
           </li>
         </ul>
       </div>
+      <div className="spacer"></div>
 
+      {/* Dougans */}
       <div className="jobContainerImage">
         <div className="dougansPhotoContainer">
           <p className="dougansTitle">Dougans Racing</p>
