@@ -48,7 +48,7 @@ export default function LettersOfRecommendation() {
 
       <div className="lettersOfRecommendationContainer">
         <div className="lettersOfRecommendationLine"></div>
-        <p className="lettersOfRecommendationBody">
+        <div className="lettersOfRecommendationBody">
           {" "}
           <p>To whom it may concern,</p>
           <p>
@@ -82,10 +82,11 @@ export default function LettersOfRecommendation() {
             led.
           </p>
           <p>Sincerely,</p>
-        </p>
+        </div>
         <a
           href="https://www.linkedin.com/in/robert-bob-kruse-459a73101/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <p className="lettersOfRecommendationName">Robert A. Kruse</p>
         </a>
@@ -98,17 +99,18 @@ export default function LettersOfRecommendation() {
       </div>
 
       <div className="lettersOfRecommendationContainer">
-        <p className="lettersOfRecommendationBody">
+        <div className="lettersOfRecommendationBody">
           <p>
             I had the pleasure of Isaac in my group for three years at Karma.
             Incredible bright, enthusiastic, smart, intelligent with a vison of
             what he wants from his life. Isaac is a very talented engineer with
             a bright future.
           </p>
-        </p>
+        </div>
         <a
           href="https://www.linkedin.com/in/john-cooper-77054225/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <p className="lettersOfRecommendationName">John Cooper</p>
         </a>
@@ -121,6 +123,7 @@ export default function LettersOfRecommendation() {
           <a
             href="https://www.linkedin.com/in/isaachouseholder/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Click to view source
           </a>
@@ -129,7 +132,7 @@ export default function LettersOfRecommendation() {
       </div>
 
       <div className="lettersOfRecommendationContainer">
-        <p className="lettersOfRecommendationBody">
+        <div className="lettersOfRecommendationBody">
           {" "}
           <p>To whom it may concern,</p>
           <p>
@@ -150,10 +153,11 @@ export default function LettersOfRecommendation() {
             will do well and and sure to exceed expectations with any company he
             works at.
           </p>
-        </p>
+        </div>
         <a
           href="https://www.linkedin.com/in/steven-foster-60680a108/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <p className="lettersOfRecommendationName">Steven Foster</p>
         </a>
@@ -165,6 +169,7 @@ export default function LettersOfRecommendation() {
           <a
             href="https://www.linkedin.com/in/isaachouseholder/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Click to view source
           </a>
@@ -173,18 +178,19 @@ export default function LettersOfRecommendation() {
       </div>
 
       <div className="lettersOfRecommendationContainer">
-        <p className="lettersOfRecommendationBody">
+        <div className="lettersOfRecommendationBody">
           <p>
             Isaac brings enthusiasm and creativity to any task, and thinks
             outside the box. With his often unique perspective he would be an
             asset to any engineering, marketing or sales organization,
             complemented by his people skills and technical knowledge.
           </p>
-        </p>
+        </div>
 
         <a
           href="https://www.linkedin.com/in/charlie-galea-40428520/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <p className="lettersOfRecommendationName">Charlie Galea</p>
         </a>
@@ -196,6 +202,7 @@ export default function LettersOfRecommendation() {
           <a
             href="https://www.linkedin.com/in/isaachouseholder/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Click to view source
           </a>
