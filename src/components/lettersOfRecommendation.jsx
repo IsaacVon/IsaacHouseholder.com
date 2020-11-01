@@ -40,7 +40,11 @@ export default function LettersOfRecommendation() {
 
   return (
     <>
-      <h4 className="color lettersOfRecommendationTitleSpacing">Letters</h4>
+      <div className="spacer"></div>
+
+      <h4 id="letters" className="color lettersOfRecommendationTitleSpacing">
+        Letters
+      </h4>
       <h4 className="color lettersOfRecommendationTitleSpacing">of</h4>
       <h4 className="color lettersOfRecommendationTitleSpacing">
         Recommendation

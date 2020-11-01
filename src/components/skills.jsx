@@ -3,7 +3,9 @@ import React from "react";
 export default function Skills() {
   return (
     <>
-      <h4 className="color">Skills</h4>
+          <div id="skills" className="spacer"></div>
+
+      <h4  className="color">Skills</h4>
       <p className="skillGenre">Computer Proficiencies</p>
       <div className="skillContainer">
         <p className="skillName">

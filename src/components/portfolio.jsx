@@ -1,11 +1,11 @@
 import React from "react";
 import whatGrows from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
-import chungAndAssociates from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
+import chungAndAssociates from "../assets/portfolioIcons/chung.svg";
 import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
 
 export default function Portfolio() {
   return (
-    <div className="portfolioBackground">
+    <div id="portfolio" className="portfolioBackground">
       <div className="portfolioContainer">
         <div className="portfolioIconWhatGrows">
           <a
