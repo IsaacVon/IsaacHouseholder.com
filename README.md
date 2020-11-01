@@ -1,1 +1,1 @@
-This is the code used for my portfolio website isaachouseholder.com
+This is the code used for my resume/portfolio website isaachouseholder.com
