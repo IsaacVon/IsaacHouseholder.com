@@ -2,7 +2,9 @@ import React from "react";
 
 export default function Objective() {
   return (
-    <div className="objectiveContainer">
+    <>
+          <div className="spacer"></div>
+
       <h4 className="color">Objective</h4>
       <p className="objectiveText">
         The objective of my next career move is to get into the sales side of
@@ -14,6 +16,6 @@ export default function Objective() {
         and I am searching for a remote engineering job that will allow me to
         pursue my passion in engineering as well as live where I want.
       </p>
-    </div>
+    </>
   );
 }
