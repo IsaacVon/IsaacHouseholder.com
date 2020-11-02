@@ -41,7 +41,6 @@ h4 {
   font-weight: normal;
   margin-bottom: 0px;
   text-align: center;
-
 }
 
 .objectiveContainer {
@@ -181,14 +180,16 @@ h4 {
   font-weight: normal;
   font-size: 20px;
   line-height: 15px;
-  margin-top: 22px;
+  margin-bottom: 0px;
+
 }
 
 .skillName {
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 15px;
+  text-align: center;
 }
 
 .skillContainer {
@@ -209,7 +210,6 @@ h4 {
 }
 
 .profile {
-
   width: 162px;
   margin-top: 128px;
   margin-bottom: 13px;
@@ -223,9 +223,8 @@ h4 {
   place-items: center;
 }
 
-
 .app {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   max-height: 100vh;
   overflow-y: scroll;
 
@@ -237,6 +236,7 @@ h4 {
   scroll-snap-align: start;
 
   /* background-color: lightblue; */
+  width: 100vw;
   max-width: 1000px;
   display: grid;
   place-items: center;
@@ -262,6 +262,7 @@ h4 {
 
 .lettersOfRecommendationContainer {
   max-width: 580px;
+  margin: 0px 41px;
 }
 
 .lettersOfRecommendationLine {
@@ -351,8 +352,17 @@ h4 {
 .universityName {
   font-weight: normal;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 40px;
   margin-block-start: 22px;
+  margin: 0px 41px;
+}
+
+.hobbies {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-block-start: 22px;
+  margin: 0px 41px;
 }
 
 .universityDegree {
@@ -369,6 +379,85 @@ h4 {
 /* Media Queries */
 
 @media only screen and (max-width: 1000px) {
+  .karmaTitle {
+    font-size: 26px;
+    line-height: 15px;
+    top: 90px;
+  }
+
+  .jobDetails{
+    margin: 10px 40px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .skillContainer{
+    width: auto;
+    margin: 10px 40px;
+  }
+
+  .jobTitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .companyDescriptioUnderImage {
+    margin: 10px 40px;
+  }
+  
+  .companyDescription {
+    margin: 10px 40px;
+  }
+  .dougansTitle {
+    font-size: 26px;
+    line-height: 15px;
+    top: 90px;
+  }
+
+  .experienceContainer {
+    margin: 0px 0px;
+  }
+
+  .karmaPhotoContainer {
+    background-position: center 0px;
+    background-size: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 225px;
+    margin-top: 50px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+
+  .dougansPhotoContainer {
+    background-position: center 0px;
+    background-size: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 225px;
+    margin-top: 50px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+
+  .jobContainerImage {
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+  }
+
+  .universityName {
+    font-size: 15px;
+  }
+
   .socialLinkBackground {
     background-color: green;
     margin-bottom: 160px;
@@ -382,28 +471,33 @@ h4 {
   }
 
   .portfolioBackground {
-    margin: 600px 20px;
+    margin: 600px 0px;
+    height: 181px;
+    width: 319px;
+  }
+
+  .portfolioContainer img {
+    width: 60px;
   }
 
   .portfolioIconWhatGrows {
     position: relative;
-    left: -238px;
-    top: 101px;
+    left: -109px;
+    top: 48px;
   }
 
   .portfolioIconChungAndAssociates {
-    left: -25px;
-    top: 11px;
+    left: -12px;
+    top: 0px;
   }
 
   .portfolioIconHawaiiLavaZones {
-    left: 190px;
-    top: -70px;
+    left: 90px;
+    top: -47px;
   }
 
-  .portfolioIconWhatGrows {
-    left: -239px;
-    top: 85px;
+  .lettersOfRecommendationTitleSpacing {
+    font-size: 30px;
   }
 }
 

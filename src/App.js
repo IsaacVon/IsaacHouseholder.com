@@ -23,7 +23,7 @@ function App() {
           <SocialLinks />
           <Navigation />
           <Objective />
-          <Portfolio />
+          <Portfolio /> 
           <Experience />
           <Education />
           <Skills />
