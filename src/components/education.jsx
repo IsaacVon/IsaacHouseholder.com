@@ -3,7 +3,7 @@ import React from "react";
 export default function Education() {
   return (
     <div className="scrollSnap">
-      <div className="centeringContainer">
+      <div id="education" className="centeringContainer">
         <h4 className="color">Education</h4>
         <p className="universityName">
           California Baptist University 2012-2016

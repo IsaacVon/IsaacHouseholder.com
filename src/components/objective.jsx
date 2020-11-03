@@ -3,9 +3,9 @@ import React from "react";
 export default function Objective() {
   return (
     <>
-      <div  className="scrollSnap">
+      <div className="scrollSnap">
         <div>
-          <h4 className="color">Objective</h4>
+          <h4 id="objective" className="color">Objective</h4>
           <p className="objectiveText">
             The objective of my next career move is to get into the sales side
             of engineering. I love working with people, and many people have

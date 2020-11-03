@@ -244,12 +244,14 @@ h4 {
 }
 
 .app {
-  scroll-snap-type: y mandatory;
-  max-height: 100vh;
-  overflow-y: scroll;
-
   display: grid;
   place-items: center;
+}
+
+.appSnapScroll {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  max-height: 100vh;
 }
 
 .maxWidthContainer {
@@ -391,7 +393,6 @@ h4 {
 /* Media Queries */
 
 @media only screen and (max-width: 1000px) {
-
   .app {
     scroll-snap-type: y proximity;
     max-height: 100vh;
@@ -399,7 +400,7 @@ h4 {
     display: grid;
     place-items: center;
   }
-  
+
   .scrollSnapExtended {
     /* background-color: aqua; */
     scroll-snap-align: start;
@@ -407,8 +408,6 @@ h4 {
     display: grid;
     place-items: center;
   }
-  
-
 
   .karmaTitle {
     font-size: 26px;

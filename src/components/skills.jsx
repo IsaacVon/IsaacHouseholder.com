@@ -3,7 +3,7 @@ import React from "react";
 export default function Skills() {
   return (
     <div className="scrollSnap">
-      <div className="centeringContainer">
+      <div id="skills" className="centeringContainer">
         <h4 className="color">Skills</h4>
         <p className="skillGenre">Computer Proficiencies</p>
         <div className="skillContainer">

@@ -4,10 +4,10 @@ export default function Experience() {
   return (
     // <div className="scrollSnap">
 
-    <div className="experienceContainer">
+    <div  id="experience" className="experienceContainer">
       <div className="scrollSnap">
         <div>
-          <h4 id="experience" className="color">
+          <h4 className="color">
             Experience
           </h4>
 
