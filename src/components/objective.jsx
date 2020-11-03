@@ -5,17 +5,22 @@ export default function Objective() {
     <>
       <div className="scrollSnap">
         <div>
-          <h4 id="objective" className="color">Objective</h4>
+          <h4 id="objective" className="color">
+            Objective
+          </h4>
           <p className="objectiveText">
-            The objective of my next career move is to get into the sales side
-            of engineering. I love working with people, and many people have
-            told me that I would be great at sales. After gaining technical
-            industry experience, I am now going to steer my career in this
-            direction because I am confident that things will go great and I
-            will continue to love the work I do. I plan on moving to Kauai,
-            Hawaii this year with my fiancé and I am searching for a remote
-            engineering job that will allow me to pursue my passion in
-            engineering as well as live where I want.
+            The objective of my next career move is to get into the software
+            side of engineering. I noticed that time flew by while programming
+            an Arduino at my internship at Bourns Electronics. I later realized
+            that the biggest big part of my passion for cars and automotive was
+            the challenge of building and making things work. I have always had
+            a passion for building things, and software opens up my passion to
+            so many new possibilities. In the last several months, I have
+            immersed myself in classes and building projects. I have enjoyed the
+            challenges and satisfaction of programming. I am confident in my
+            programming knowledge and ability to learn code. I am very excited
+            about the future of software and how it is improving the world. I
+            want to make a positive impact on others with my work.
           </p>
         </div>
       </div>

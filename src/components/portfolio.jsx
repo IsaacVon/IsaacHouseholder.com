@@ -1,5 +1,5 @@
 import React from "react";
-import whatGrows from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
+import whatGrows from "../assets/portfolioIcons/whatgrows.svg";
 import chungAndAssociates from "../assets/portfolioIcons/chung.svg";
 import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
 

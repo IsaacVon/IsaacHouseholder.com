@@ -353,25 +353,25 @@ h4 {
 }
 
 .portfolioContainer img {
-  width: 100px;
+  width: 118px;
 }
 
 .portfolioIconWhatGrows {
   position: relative;
   left: -238px;
-  top: 83px;
+  top: 92px;
 }
 
 .portfolioIconChungAndAssociates {
   position: relative;
-  left: -26px;
-  top: 9px;
+  left: -28px;
+  top: 28px;
 }
 
 .portfolioIconHawaiiLavaZones {
   position: relative;
-  left: 193px;
-  top: -71px;
+  left: 191px;
+  top: -63px;
 }
 
 .universityName {
@@ -526,12 +526,12 @@ h4 {
 
   .portfolioIconChungAndAssociates {
     left: -12px;
-    top: 0px;
+    top: 13px;
   }
 
   .portfolioIconHawaiiLavaZones {
     left: 90px;
-    top: -47px;
+    top: -34px;
   }
 
   .lettersOfRecommendationTitleSpacing {
