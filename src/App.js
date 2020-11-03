@@ -19,11 +19,13 @@ function App() {
     <>
       <div className="app">
         <div className="maxWidthContainer">
-          <Header />
-          <SocialLinks />
+          <div className="scrollSnap">
+            <Header />
+            <SocialLinks />
+          </div>
           <Navigation />
           <Objective />
-          <Portfolio /> 
+          <Portfolio />
           <Experience />
           <Education />
           <Skills />

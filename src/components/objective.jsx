@@ -3,7 +3,7 @@ import React from "react";
 export default function Objective() {
   return (
     <>
-      <div className="scrollSnap">
+      <div  className="scrollSnap">
         <div>
           <h4 className="color">Objective</h4>
           <p className="objectiveText">
