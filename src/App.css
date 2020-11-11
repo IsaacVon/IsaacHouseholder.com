@@ -225,9 +225,11 @@ h4 {
 .scrollSnap {
   /* background-color: aqua; */
   scroll-snap-align: start;
-  height: 100vh;
   display: grid;
   place-items: center;
+  /* height: 100vh; */
+  height: auto;
+  padding: 200px 0px;
 }
 
 .scrollSnapExtended {
@@ -259,7 +261,7 @@ h4 {
 }
 
 .appSnapScroll {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll;
   max-height: 100vh;
 }
@@ -403,7 +405,7 @@ h4 {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   .app {
     scroll-snap-type: y proximity;
     max-height: 100vh;
