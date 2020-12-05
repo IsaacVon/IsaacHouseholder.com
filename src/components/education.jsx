@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="scrollSnap">
+    <div className="viewContainer">
       <div id="education" className="centeringContainer">
         <h4 className="color">Education</h4>
         <p className="universityName">

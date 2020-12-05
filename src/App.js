@@ -18,22 +18,18 @@ function App() {
   return (
     <>
       <div className="app">
-        <div className="appSnapScroll">
-          <div className="maxWidthContainer">
-            <div className="scrollSnap">
-              <Header />
-              <SocialLinks />
-            </div>
-            <Navigation />
-            <Objective />
-            <Portfolio />
-            <Experience />
-            <Education />
-            <Skills />
-            <LettersOfRecommendation />
-            <Hobbies />
-            <Footer />
-          </div>
+        <div className="maxWidthContainer">
+          <Header />
+          <SocialLinks />
+          <Navigation />
+          <Objective />
+          <Portfolio />
+          <Experience />
+          <Education />
+          <Skills />
+          <LettersOfRecommendation />
+          <Hobbies />
+          <Footer />
         </div>
       </div>
     </>

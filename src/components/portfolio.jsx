@@ -5,7 +5,7 @@ import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZones.jpg";
 
 export default function Portfolio() {
   return (
-    <div className="scrollSnap">
+    <div className="viewContainer">
       <div id="portfolio" className="portfolioBackground">
         <div className="portfolioContainer">
           <div className="portfolioIconWhatGrows">

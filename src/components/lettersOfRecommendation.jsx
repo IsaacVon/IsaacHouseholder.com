@@ -94,7 +94,7 @@ export default function LettersOfRecommendation() {
   return (
     <>
       {/* Bob */}
-      <div className="scrollSnapExtended">
+      <div className="viewContainerExtended">
         <div className="smallSpacer"></div>
         <h4 id="letters" className="color lettersOfRecommendationTitleSpacing">
           Letters
@@ -112,7 +112,7 @@ export default function LettersOfRecommendation() {
       </div>
 
       {/* John */}
-      <div className="scrollSnapExtended">
+      <div className="viewContainerExtended">
         <div className="lettersOfRecommendationContainer">
           <div className="lettersOfRecommendationLine"></div>
 
@@ -148,7 +148,7 @@ export default function LettersOfRecommendation() {
           <div className="lettersOfRecommendationLine"></div>
         </div>
       </div>
-      <div className="scrollSnapExtended">
+      <div className="viewContainerExtended">
         <div className="lettersOfRecommendationContainer">
           <div className="lettersOfRecommendationLine"></div>{" "}
           <div className="lettersOfRecommendationBody">
@@ -196,7 +196,7 @@ export default function LettersOfRecommendation() {
           <div className="lettersOfRecommendationLine"></div>
         </div>
       </div>
-      <div className="scrollSnapExtended">
+      <div className="viewContainerExtended">
         <div className="lettersOfRecommendationContainer">
           <div className="lettersOfRecommendationLine"></div>{" "}
           <div className="lettersOfRecommendationBody">

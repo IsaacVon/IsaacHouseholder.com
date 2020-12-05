@@ -53,13 +53,15 @@ h4 {
 }
 
 .objectiveContainer {
-  margin-top: 500px;
+  max-width: 800px;
 }
 
 .objectiveText {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 25px;
   margin-block-end: 20px;
   margin: 39px 41px;
 }
@@ -78,35 +80,44 @@ h4 {
   text-align: center;
 }
 
+.companyNameCHT {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 60px;
+
+}
+
 .companyDescription {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 300;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 19px;
   text-align: justify;
 }
 
 .companyDescriptioUnderImage {
-  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 20px;
   margin-bottom: 10px;
   max-width: 580px;
   font-weight: 300;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 19px;
   text-align: justify;
 }
 
-.jobContainer {
-  margin-top: 10px;
-  display: grid;
-  place-items: center;
-}
+
+
+
 .jobContainerImage {
   margin-top: 10px;
   width: 580px;
-  display: grid;
-  place-items: center;
+  /* display: grid;
+  place-items: center; */
 }
 
 .jobTitle {
@@ -118,11 +129,17 @@ h4 {
 }
 
 .jobDetails {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding-inline-start: 15px;
   font-weight: 300;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 25px;
   text-align: left;
+}
+
+.jobDetails li {
+  margin: 20px 0;
 }
 
 .karmaPhotoContainer {
@@ -196,11 +213,13 @@ h4 {
   font-weight: 300;
   font-size: 15px;
   line-height: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .skillContainer {
-  width: 500px;
+  width: 213px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .lettersOfRecommendationTitleSpacing {
@@ -214,6 +233,7 @@ h4 {
   -webkit-background-clip: text;
   background-clip: text;
   color: #2c2d52;
+  margin-bottom: 20px;
 }
 
 .profile {
@@ -222,22 +242,13 @@ h4 {
   margin-bottom: 13px;
 }
 
-.scrollSnap {
-  /* background-color: aqua; */
-  scroll-snap-align: start;
-  display: grid;
-  place-items: center;
-  /* height: 100vh; */
-  height: auto;
-  padding: 200px 0px;
+.viewContainer {
+  padding: 250px 0px;
 }
 
-.scrollSnapExtended {
-  /* background-color: aqua; */
-  scroll-snap-align: start;
-  height: 100vh;
-  display: grid;
-  place-items: center;
+.viewContainerExtended {
+  padding: 250px 0px;
+
 }
 
 .snapContainerNoHeight {
@@ -261,7 +272,7 @@ h4 {
 }
 
 .appSnapScroll {
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: y proximity; */
   overflow-y: scroll;
   max-height: 100vh;
 }
@@ -310,9 +321,10 @@ h4 {
 }
 
 .lettersOfRecommendationBody {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   font-size: 15px;
-  line-height: 17px;
+  line-height: 26px;
   text-align: justify;
 }
 
@@ -325,6 +337,7 @@ h4 {
 }
 
 .lettersOfRecommendationTitle {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 13px;
@@ -414,7 +427,7 @@ h4 {
     place-items: center;
   }
 
-  .scrollSnapExtended {
+  .viewContainerExtended {
     /* background-color: aqua; */
     scroll-snap-align: start;
     height: 100%;
@@ -428,10 +441,15 @@ h4 {
     top: 90px;
   }
 
+
   .jobDetails {
     margin: 10px 40px;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 25px;
+  }
+
+  .jobDetails li {
+    margin: 10px 0;
   }
 
   .skillContainer {
@@ -442,10 +460,10 @@ h4 {
   .jobTitle {
     font-size: 18px;
     line-height: 24px;
-    margin-top: auto;
+    margin: 40px 40px 10px 40px;
   }
   .companyDescriptioUnderImage {
-    margin: 10px 40px;
+    margin: 20px 40px;
   }
 
   .companyDescription {
@@ -492,12 +510,14 @@ h4 {
   .jobContainerImage {
     margin-top: 0px;
     width: 100vw;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
   }
 
   .universityName {
     font-size: 15px;
+    margin-top: 5px;
+
   }
 
   .socialLinkBackground {

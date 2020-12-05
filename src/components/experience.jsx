@@ -2,18 +2,16 @@ import React from "react";
 
 export default function Experience() {
   return (
-    // <div className="scrollSnap">
+    // <div className="viewContainer">
 
-    <div  id="experience" className="experienceContainer">
-      <div className="scrollSnap">
+    <div id="experience" className="experienceContainer">
+      <div className="viewContainer">
         <div>
-          <h4 className="color">
-            Experience
-          </h4>
+          <h4 className="color">Experience</h4>
 
           {/* California Home Team */}
-          <div className="jobContainer">
-            <p className="companyName">California Home Team</p>
+          <div>
+            <p className="companyNameCHT">California Home Team</p>
 
             <p className="companyDescription">
               California Home Team is a small real estate company that has been
@@ -40,7 +38,7 @@ export default function Experience() {
       </div>
 
       {/* Karma */}
-      <div className="scrollSnap">
+      <div className="viewContainer">
         <div className="jobContainerImage">
           <div className="karmaPhotoContainer">
             <p className="karmaTitle">Karma Automotive</p>
@@ -70,12 +68,9 @@ export default function Experience() {
               to set targets.
             </li>
           </ul>
-        </div>
-      </div>
+       
 
-      <div className="scrollSnap">
-        <div>
-          <p className="companyName">Karma Automotive</p>
+  
           <p className="jobTitle">Test Engineer (2016 – 2019)</p>
           <ul className="jobDetails">
             <li>
@@ -106,8 +101,8 @@ export default function Experience() {
       </div>
 
       {/* Bourns */}
-      <div className="scrollSnap">
-        <div className="jobContainer">
+      <div className="viewContainer">
+        <div>
           <p className="companyName">Bourns Electronics</p>
 
           <p className="companyDescription">
@@ -142,7 +137,7 @@ export default function Experience() {
       </div>
 
       {/* Dougans */}
-      <div className="scrollSnap">
+      <div className="viewContainer">
         <div className="jobContainerImage">
           <div className="dougansPhotoContainer">
             <p className="dougansTitle">Dougans Racing</p>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Navigation({ handleNavClick }) {
   return (
-    <div className="scrollSnap">
+    <div className="viewContainer">
       <div>
         <a href="#objective">
           <h3>Objective</h3>

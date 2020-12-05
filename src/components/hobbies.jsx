@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="scrollSnap">
+    <div className="viewContainer">
       <div id="hobbies">
         <h4 className="color">Hobbies</h4>
         <p className="hobbies">Hiking</p>
