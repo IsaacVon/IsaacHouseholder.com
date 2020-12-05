@@ -33,7 +33,6 @@ export default function Experience() {
               </li>
               <li>Lead generation (In-Person, Internet, phone, and email).</li>
               <li>Working with existing customers to help them find homes.</li>
-              <li>Working with existing customers to help them find homes.</li>
               <li>Holding open houses.</li>
             </ul>
           </div>
