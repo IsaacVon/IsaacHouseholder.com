@@ -86,11 +86,11 @@ h4 {
   line-height: 15px;
   text-align: center;
   margin-top: 60px;
-
 }
 
 .companyDescription {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 300;
@@ -100,7 +100,8 @@ h4 {
 }
 
 .companyDescriptioUnderImage {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 20px;
   margin-bottom: 10px;
   max-width: 580px;
@@ -109,9 +110,6 @@ h4 {
   line-height: 19px;
   text-align: justify;
 }
-
-
-
 
 .jobContainerImage {
   margin-top: 10px;
@@ -212,14 +210,14 @@ h4 {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  line-height: 15px;
+  line-height: 23px;
   text-align: left;
 }
 
 .skillContainer {
   width: 213px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .lettersOfRecommendationTitleSpacing {
@@ -248,7 +246,6 @@ h4 {
 
 .viewContainerExtended {
   padding: 250px 0px;
-
 }
 
 .snapContainerNoHeight {
@@ -321,7 +318,8 @@ h4 {
 }
 
 .lettersOfRecommendationBody {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 26px;
@@ -337,7 +335,8 @@ h4 {
 }
 
 .lettersOfRecommendationTitle {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 13px;
@@ -412,6 +411,19 @@ h4 {
   margin-block-start: -5px;
 }
 
+.universitySae {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 50px;
+  max-width: 580px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: justify;
+  margin: 0px 56px 40px 56px;
+
+}
+
 /* Desktop */
 
 /* Mobile */
@@ -420,7 +432,6 @@ h4 {
 
 @media only screen and (max-width: 600px) {
   .app {
-    scroll-snap-type: y proximity;
     max-height: 100vh;
     overflow-y: scroll;
     display: grid;
@@ -431,8 +442,7 @@ h4 {
     /* background-color: aqua; */
     scroll-snap-align: start;
     height: 100%;
-    display: grid;
-    place-items: center;
+ 
   }
 
   .karmaTitle {
@@ -440,7 +450,6 @@ h4 {
     line-height: 15px;
     top: 90px;
   }
-
 
   .jobDetails {
     margin: 10px 40px;
@@ -517,7 +526,6 @@ h4 {
   .universityName {
     font-size: 15px;
     margin-top: 5px;
-
   }
 
   .socialLinkBackground {

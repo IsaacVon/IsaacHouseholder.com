@@ -22,16 +22,19 @@ export default function Experience() {
             <ul className="jobDetails">
               <li>
                 Working with investors on investment properties and researching
-                the appropriate statistics
+                the appropriate statistics.
               </li>
-              <li>Purchase Contract negotiation</li>
+              <li>Purchase Contract negotiation.</li>
+              <li>Online Advertising.</li>
+              <li>Holding open houses and advertising for the event.</li>
               <li>
                 Staying up to date on market conditions and trends. (Interest
-                rates, prices, supply/demand)
+                rates, prices, supply/demand).
               </li>
-              <li>Lead generation (In Person, Internet, phone and email)</li>
-              <li> Working with existing customers to help them find homes.</li>
-              <li>Holding open houses and advertising for the event</li>
+              <li>Lead generation (In-Person, Internet, phone, and email).</li>
+              <li>Working with existing customers to help them find homes.</li>
+              <li>Working with existing customers to help them find homes.</li>
+              <li>Holding open houses.</li>
             </ul>
           </div>
         </div>
@@ -45,8 +48,8 @@ export default function Experience() {
           </div>
           <p className="companyDescriptioUnderImage">
             Karma is a design and manufacturer of high-class luxury hybrid cars
-            that are designed to continually challenge the market for the
-            sustainable future of luxury cars.
+            designed to continually challenge the market for the sustainable
+            future of luxury cars.
           </p>
           <p className="jobTitle">
             Vehicle Integration and Validation Engineer (2019-2019)
@@ -68,15 +71,19 @@ export default function Experience() {
               to set targets.
             </li>
           </ul>
-       
 
-  
           <p className="jobTitle">Test Engineer (2016 – 2019)</p>
           <ul className="jobDetails">
             <li>
               Successfully started up and operated a fastener and material test
               lab. This initiative resulted in an operating annual cost savings
               of $375,000 year over year by eliminating the need to outsource.
+            </li>
+            <li>
+              Eliminated the need for specialty fasteners by successfully
+              standardizing fasteners used throughout the vehicle. This
+              initiative saved approximately 1.7M over the production cycle of
+              vehicles for over two years.
             </li>
             <li>
               Developed test plans and documented test procedures to standardize
@@ -90,12 +97,6 @@ export default function Experience() {
               root cause analysis onsite at the vehicle production plant
               facility.
             </li>
-            <li>
-              Eliminated the need for specialty fasteners by successfully
-              standardizing fasteners used throughout the vehicle. This
-              initiative saved approximately 1.7M over the production cycle of
-              vehicles for over two years.
-            </li>
           </ul>
         </div>
       </div>
@@ -107,7 +108,7 @@ export default function Experience() {
 
           <p className="companyDescription">
             Bourns is an electronics company that develops, manufactures, and
-            supplies electronic components to a variety of industries including
+            supplies electronic components to various industries, including
             automotive, industrial, instrumentation, medical electronics,
             consumer equipment, and portable electronics.
           </p>
@@ -115,6 +116,10 @@ export default function Experience() {
             Electronics Engineer (Internship Summer 2015)
           </p>
           <ul className="jobDetails">
+            <li>
+              Programmed an Arduino to process multiple analog inputs to output
+              a stable and consistent digital reading.{" "}
+            </li>
             <li>
               Designed using Autodesk Inventor, 3D printed, and tested air
               actuated linear rail systems, participating in general
@@ -125,12 +130,7 @@ export default function Experience() {
               implemented into the production process.{" "}
             </li>
             <li>
-              Was introduced to coding in this position and gained an
-              understanding of electronics at the component level.
-            </li>
-            <li>
-              Programmed an Arduino to process multiple analog inputs to output
-              a stable and consistent digital reading.{" "}
+              Gained an understanding of electronics at the component level.
             </li>
           </ul>
         </div>
@@ -156,8 +156,8 @@ export default function Experience() {
             </li>
             <li>
               Trained new employees regarding technical work to be performed,
-              covering the importance of each phase for a full understanding of
-              the process infrastructure through each stage.
+              covering each phase's importance for a full understanding of the
+              process infrastructure through each stage.
             </li>
           </ul>
         </div>
