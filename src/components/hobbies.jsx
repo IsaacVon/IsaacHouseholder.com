@@ -5,7 +5,7 @@ export default function Education() {
     <div className="viewContainer">
       <div id="hobbies">
         <h4 className="color">Hobbies</h4>
-        <p className="hobbies">Hiking</p>
+        <p className="hobbies">Hiking with family</p>
         <p className="hobbies">Computers</p>
         <p className="hobbies">Motorcycles</p>
         <p className="hobbies">Learning</p>
