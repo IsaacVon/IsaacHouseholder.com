@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 import profile from "../assets/profile.png";
 import textBackground from "../assets/swirlBackground2.png";
+import line from "../assets/lines/line.png";
+import line2 from "../assets/lines/line2.png";
 
 const Wrapper = styled.section`
   color: blue;
@@ -11,14 +13,29 @@ const Wrapper = styled.section`
   place-items: center;
 `;
 
-const Container = styled.section`
-  margin-top: 20px;
-  display: flex;
-  place-items: center;
+const LineContainer = styled.section`
+  /* display: flex;
+  place-items: center; */
 `;
+
+const ButtonContainer = styled.section``;
 
 const ProfileImage = styled.img`
   width: 104px;
+`;
+
+const LineTop = styled.img`
+  width: 1000px;
+  position: relative;
+  top: 3px;
+  left: 10px;
+`;
+
+const LineBottom = styled.img`
+  width: 1000px;
+  position: relative;
+  bottom: 10px;
+  left: 10px;
 `;
 
 const Button = styled.button`
@@ -45,26 +62,31 @@ const Button = styled.button`
 export default function NavBar() {
   return (
     <Wrapper>
-      <Container>
-        <Link to="/">
-          <ProfileImage src={profile} alt="Isaac Image" />
-        </Link>
-        <Button currentPage={false}>
-          <Link to="/portfolio">Portfolio</Link>
-        </Button>
-        <Button currentPage={false}>
-          <Link to="/experience">Experience</Link>
-        </Button>
-        <Button currentPage={false}>
-          <Link to="/recommendations">Recommendations</Link>
-        </Button>
-        <Button currentPage={false}>
-          <Link to="/educationskills"> Education and Skills</Link>
-        </Button>
-        <Button currentPage={false}>
-          <Link to="/hobbies">Hobbies</Link>
-        </Button>
-      </Container>
+      <Link to="/">
+        <ProfileImage src={profile} alt="Isaac Image" />
+      </Link>
+
+      <LineContainer>
+        <LineTop src={line2} alt="line" />
+        <ButtonContainer>
+          <Button currentPage={false}>
+            <Link to="/portfolio">Portfolio</Link>
+          </Button>
+          <Button currentPage={false}>
+            <Link to="/experience">Experience</Link>
+          </Button>
+          <Button currentPage={false}>
+            <Link to="/recommendations">Recommendations</Link>
+          </Button>
+          <Button currentPage={false}>
+            <Link to="/educationskills"> Education and Skills</Link>
+          </Button>
+          <Button currentPage={false}>
+            <Link to="/hobbies">Hobbies</Link>
+          </Button>
+        </ButtonContainer>
+        <LineBottom src={line} alt="line" />
+      </LineContainer>
     </Wrapper>
   );
 }
