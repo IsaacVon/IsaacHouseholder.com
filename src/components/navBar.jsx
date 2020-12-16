@@ -8,67 +8,88 @@ import line from "../assets/lines/line.png";
 import line2 from "../assets/lines/line2.png";
 
 const Wrapper = styled.section`
-  color: blue;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
 `;
 
-const LineContainer = styled.section`
-  /* display: flex;
-  place-items: center; */
+const LeftContainer = styled.section`
+  display: flex;
+  /* width: 45vw; */
+  justify-content: flex-end;
+  /* background-color: green; */
+  flex-wrap: wrap;
 `;
 
-const ButtonContainer = styled.section``;
+const CenterContainer = styled.section`
+  /* background-color: darkgreen; */
+`;
+
+const RightContainer = styled.section`
+  /* background-color: lightcoral; */
+  display: flex;
+  /* width: 45vw; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+`;
 
 const ProfileImage = styled.img`
   width: 104px;
 `;
 
 const LineTop = styled.img`
-  width: 1000px;
-  position: relative;
+  width: 100%;
+  max-width: 425px;
+  /* min-width: 300px; */
+  height: 1px;
+  /* position: relative; */
   top: 3px;
   left: 10px;
 `;
 
 const LineBottom = styled.img`
-  width: 1000px;
-  position: relative;
+  width: 100%;
+  max-width: 425px;
+  /* min-width: 300px; */
+  height: 1px;
+  /* position: relative; */
   bottom: 10px;
   left: 10px;
 `;
 
 const Button = styled.button`
-  /* Adapt the colors based on primary prop */
-
-  /* background: ${(props) => (props.currentPage ? "palevioletred" : "white")};
-
-  color: ${(props) => (props.currentPage ? "white" : "palevioletred")}; */
-  /* background: url(${textBackground});
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text; */
-
+  flex-shrink: 1;
+  width: 150px;
   color: #2c2d52;
   background-color: white;
-
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
+  font-size: 15px;
+  margin: 1em 0px;
   border: 0px;
-  border-radius: 10px;
+  border-radius: 30px;
+`;
+
+const LeftWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+`;
+
+const RightWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 `;
 
 export default function NavBar() {
   return (
     <Wrapper>
-      <Link to="/">
-        <ProfileImage src={profile} alt="Isaac Image" />
-      </Link>
-
-      <LineContainer>
+      <LeftWrapper>
         <LineTop src={line2} alt="line" />
-        <ButtonContainer>
+
+        <LeftContainer>
           <Button currentPage={false}>
             <Link to="/portfolio">Portfolio</Link>
           </Button>
@@ -78,15 +99,31 @@ export default function NavBar() {
           <Button currentPage={false}>
             <Link to="/recommendations">Recommendations</Link>
           </Button>
+        </LeftContainer>
+        <LineBottom src={line} alt="line" />
+      </LeftWrapper>
+
+      <CenterContainer>
+        <Link to="/">
+          <ProfileImage src={profile} alt="Isaac Image" />
+        </Link>
+      </CenterContainer>
+
+      <RightWrapper>
+        <LineTop src={line2} alt="line" />
+        <RightContainer>
           <Button currentPage={false}>
-            <Link to="/educationskills"> Education and Skills</Link>
+            <Link to="/education">Education</Link>
+          </Button>
+          <Button currentPage={false}>
+            <Link to="/skills">Skills</Link>
           </Button>
           <Button currentPage={false}>
             <Link to="/hobbies">Hobbies</Link>
           </Button>
-        </ButtonContainer>
+        </RightContainer>
         <LineBottom src={line} alt="line" />
-      </LineContainer>
+      </RightWrapper>
     </Wrapper>
   );
 }
