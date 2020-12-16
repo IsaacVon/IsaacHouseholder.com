@@ -112,6 +112,10 @@ const Button = styled.button`
 
     /* background-color: #f89143; */
   }
+
+  &:focus {
+    outline-width: 0px;
+  }
 `;
 
 const LeftWrapper = styled.section`
