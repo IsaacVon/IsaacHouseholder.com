@@ -14,7 +14,7 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px;
+  margin: 88px 20px 20px 20px;
 `;
 
 const NavDrawer = styled.section`
@@ -38,8 +38,8 @@ const CenterContainer = styled.section`
 const BurgerContainer = styled.section`
   /* background-color: darkgreen; */
   position: absolute;
-  right: 29px;
-  top: 43px;
+  right: 36px;
+  top: 115px;
 `;
 
 const RightContainer = styled.section`
@@ -98,6 +98,7 @@ const Button = styled.button`
   margin: 1em 0px;
   border: 0px;
   border-radius: 30px;
+  font-family: "comfortaa";
 
   &:hover {
     transition: background-color 0.2s ease-in-out;
