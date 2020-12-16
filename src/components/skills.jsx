@@ -14,11 +14,13 @@ export default function Skills() {
         <p className="skillGenre">Code specific Experience </p>
         <div className="skillContainer">
           <p className="skillName">React, JSX, Javascript ES6</p>
-          <p className="skillName">AJAX, JSON, APIs</p>
+          <p className="skillName">AJAX, AXIOS, JSON, APIs</p>
           <p className="skillName">Node, Google Cloud, Express</p>
           <p className="skillName">MongoDB, MySQL, JWT</p>
           <p className="skillName">Git, Github, NPM</p>
-          <p className="skillName">CSS, HTML, Styled-Components, Material UI, Figma</p>
+          <p className="skillName">
+            CSS, HTML, Styled-Components, Material UI, Figma
+          </p>
         </div>
       </div>
     </div>
