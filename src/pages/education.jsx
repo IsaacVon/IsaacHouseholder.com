@@ -26,8 +26,9 @@ const SchoolName = styled.h2`
   font-weight: normal;
   font-size: 20px;
   line-height: 15px;
-  margin-bottom: 0px;
   color: #2c2d52;
+  line-height: 22px;
+  margin: 15px 52px 0px 52px;
 `;
 
 const DegreeType = styled.h3`
