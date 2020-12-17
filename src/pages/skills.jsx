@@ -9,11 +9,18 @@ const Wrapper = styled.section`
   padding-bottom: 200px;
 `;
 
-const SkillContainer = styled.section`
+const SkillContainer = styled.ul`
   margin: 7px 0px 6px 0px;
   width: 213px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: left;
+  list-style-type: none;
+  padding-inline-start: 0px;
 `;
 
 const Section = styled.h1`
@@ -37,33 +44,24 @@ const SkillGenre = styled.h2`
   color: #2c2d52;
 `;
 
-const SkillName = styled.li`
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  text-align: left;
-  list-style-type: none;
-`;
-
 export default function Skills() {
   return (
     <Wrapper>
       <Section>Skills</Section>
       <SkillGenre>Computer Proficiencies</SkillGenre>
       <SkillContainer>
-        <SkillName>Catia, Smarteam, Solidworks</SkillName>
-        <SkillName>Jira, Polarion</SkillName>
-        <SkillName>Microsoft Office, SAP, Slack</SkillName>
+        <li>Catia, Smarteam, Solidworks</li>
+        <li>Jira, Polarion</li>
+        <li>Microsoft Office, SAP, Slack</li>
       </SkillContainer>
       <SkillGenre>Code specific Experience </SkillGenre>
       <SkillContainer>
-        <SkillName>React, JSX, Javascript ES6</SkillName>
-        <SkillName>AJAX, JSON, APIs</SkillName>
-        <SkillName>Node, Google Cloud, Express</SkillName>
-        <SkillName>MongoDB, MySQL, JWT</SkillName>
-        <SkillName>Git, Github, NPM</SkillName>
-        <SkillName>CSS, HTML, Styled-Components, Material UI, Figma</SkillName>
+        <li>React, JSX, Javascript ES6</li>
+        <li>AJAX, JSON, APIs</li>
+        <li>Node, Google Cloud, Express</li>
+        <li>MongoDB, MySQL, JWT</li>
+        <li>Git, Github, NPM</li>
+        <li>CSS, HTML, Styled-Components, Material UI, Figma</li>
       </SkillContainer>
     </Wrapper>
   );

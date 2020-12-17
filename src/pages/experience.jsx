@@ -20,7 +20,6 @@ const Section = styled.h1`
   margin-top: 10vw;
 `;
 
-
 export default function Experience() {
   return (
     <Wrapper>

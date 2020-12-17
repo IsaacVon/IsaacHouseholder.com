@@ -28,25 +28,26 @@ const Section = styled.h1`
   margin-bottom: 17px;
 `;
 
-
-
-const HobbyName = styled.li`
+const HobbyList= styled.ul`
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   text-align: left;
   list-style-type: none;
+  padding-inline-start: 0px;
 `;
 export default function Hobbies() {
   return (
     <Wrapper>
       <Section>Hobbies</Section>
-      <HobbyName>Hiking with family</HobbyName>
-      <HobbyName>Computers</HobbyName>
-      <HobbyName>Motorcycles</HobbyName>
-      <HobbyName>Learning</HobbyName>
-      <HobbyName>Eating</HobbyName>
+      <HobbyList>
+        <li>Hiking with family</li>
+        <li>Computers</li>
+        <li>Motorcycles</li>
+        <li>Learning</li>
+        <li>Eating</li>
+      </HobbyList>
     </Wrapper>
   );
 }
