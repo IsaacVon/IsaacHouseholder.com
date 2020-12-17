@@ -69,9 +69,7 @@ const LineTop = styled.img`
 const LineBottom = styled.img`
   width: 100%;
   max-width: 425px;
-  /* min-width: 300px; */
   height: 1px;
-  /* position: relative; */
   bottom: 10px;
   left: 10px;
 `;
@@ -80,9 +78,7 @@ const LineBottomNav = styled.img`
   margin-top: 20px;
   width: 100%;
   max-width: 425px;
-  /* min-width: 300px; */
   height: 1px;
-  /* position: relative; */
   bottom: 10px;
   left: 10px;
 `;
@@ -136,7 +132,7 @@ export default function NavBar() {
   const [windowWidth, setwindowWidth] = useState(window.innerWidth);
   const [navExpanded, setnavExpanded] = useState(false);
 
-  const mobileNavWidth = 800;
+  const mobileNavWidth = 1100;
 
   const toggleNavDropdown = () => {
     const newNavPosition = navExpanded ? false : true;

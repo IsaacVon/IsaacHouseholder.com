@@ -28,22 +28,6 @@ function App() {
         <Route path="/" component={Home} />
       </Switch>
     </Router>
-
-    //   <div className="app">
-    //     <div className="maxWidthContainer">
-    //       <Header />
-    //       <SocialLinks />
-    //       <Navigation />
-    //       <Objective />
-    //       <Portfolio />
-    //       <Experience />
-    //       <Education />
-    //       <Skills />
-    //       <LettersOfRecommendation />
-    //       <Hobbies />
-    //       <Footer />
-    //     </div>
-    //   </div>
   );
 }
 
