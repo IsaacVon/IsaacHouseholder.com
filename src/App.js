@@ -11,7 +11,6 @@ import Experience from "./pages/experience";
 import Portfolio from "./pages/portfolio";
 import NavBar from "./components/navBar";
 
-
 import "./App.css";
 
 function App() {
