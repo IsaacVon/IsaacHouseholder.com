@@ -8,9 +8,16 @@ import textBackground from "../assets/swirlBackground2.png";
 
 const Wrapper = styled.section`
   display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding-bottom: 200px;
+`;
+
+const IconContainer = styled.section`
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 44px;
+  margin-top: 0px;
 `;
 
 const Container = styled.section`
@@ -42,27 +49,45 @@ const Section = styled.h1`
   text-align: center;
   color: #2c2d52;
   font-size: 34px;
-  margin-top: 10vw;
+  margin-top: 70px;
 `;
 
 export default function Portfolio() {
   return (
     <>
       <Section>Portfolio</Section>
-      <Wrapper>
+      <IconContainer>
         <Container>
-          <HawaiiLavaZones src={hawaiiLavaZones} alt="Hawaii Lava Zones" />
+          <a
+            href="https://hawaiilavazones.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <HawaiiLavaZones src={hawaiiLavaZones} alt="Hawaii Lava Zones" />
+          </a>
         </Container>
         <Container>
-          <ChungAndAssociates
-            src={chungAndAssociates}
-            alt="Chung And Associates"
-          />
+          <a
+            href="http://chungandassociates.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ChungAndAssociates
+              src={chungAndAssociates}
+              alt="Chung And Associates"
+            />
+          </a>
         </Container>
         <Container>
-          <ImageWhatGrows src={whatGrows} alt="What Grows" />
+          <a
+            href="https://www.whatgrows.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ImageWhatGrows src={whatGrows} alt="What Grows" />
+          </a>
         </Container>
-      </Wrapper>
+      </IconContainer>
     </>
   );
 }
