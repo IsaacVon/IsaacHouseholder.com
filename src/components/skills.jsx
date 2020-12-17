@@ -1,10 +1,28 @@
 import React from "react";
+import styled from "styled-components";
+
+const Wrapper = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 44px;
+`;
+const Section = styled.h1`
+  background: url(${textBackground});
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  color: #2c2d52;
+  font-size: 34px;
+  margin-top: 10vw;
+`;
 
 export default function Skills() {
   return (
     <div className="viewContainer">
       <div id="skills" className="centeringContainer">
-        <h4 className="color">Skills</h4>
+        <Section>Skills</Section>
         <p className="skillGenre">Computer Proficiencies</p>
         <div className="skillContainer">
           <p className="skillName">Catia, Smarteam, Solidworks</p>
