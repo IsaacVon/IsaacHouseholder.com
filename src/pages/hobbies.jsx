@@ -28,7 +28,7 @@ const Section = styled.h1`
   margin-bottom: 17px;
 `;
 
-const HobbyList= styled.ul`
+const HobbyList = styled.ul`
   font-style: normal;
   font-weight: 300;
   font-size: 15px;

@@ -2,11 +2,36 @@ import React from "react";
 import styled from "styled-components";
 import textBackground from "../assets/swirlBackground2.png";
 
+import Karma from "../assets/companyImages/karma.jpg";
+
 const Wrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  place-items: center;
   margin-top: 44px;
+  padding-bottom: 200px;
+`;
+
+const JobContainer = styled.section`
+  width: 100%;
+  max-width: 580px;
+  margin-top: 10px;
+`;
+
+const PhotoContainer = styled.section`
+  width: 100%;
+  height: 304px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+`;
+
+const KarmaImage = styled.img`
+  width: 900px;
 `;
 
 const Section = styled.h1`
@@ -17,177 +42,199 @@ const Section = styled.h1`
   text-align: center;
   color: #2c2d52;
   font-size: 34px;
-  margin-top: 10vw;
+`;
+
+const CompanyName = styled.h2`
+  color: white;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 15px;
+  text-align: center;
+  position: relative;
+  top: 300px;
+`;
+
+const JobTitle = styled.h3`
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 50px;
+`;
+
+const CompanyDescription = styled.h3`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  max-width: 580px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: justify;
+`;
+
+const JobDetails = styled.ul`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-inline-start: 15px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
 `;
 
 export default function Experience() {
   return (
     <Wrapper>
-      <div id="experience" className="experienceContainer">
-        <div className="viewContainer">
-          <div>
-            <Section>Experience</Section>
+      <Section>Experience</Section>
+      <JobContainer>
+        <CompanyName>California Home Team</CompanyName>
+        <PhotoContainer>
+          <KarmaImage src={Karma} alt="Karma" />
+        </PhotoContainer>
+        <CompanyDescription>
+          California Home Team is a small real estate company that has been very
+          successful in the real estate business for over 30 years. They
+          specialize in orange county residential homes.{" "}
+        </CompanyDescription>
+        <JobTitle>Real Estate Consultant (2019-2020)</JobTitle>
+        <JobDetails>
+          <li>
+            Working with investors on investment properties and researching the
+            appropriate statistics.
+          </li>
+          <li>Purchase Contract negotiation.</li>
+          <li>Online Advertising.</li>
+          <li>Holding open houses and advertising for the event.</li>
+          <li>
+            Staying up to date on market conditions and trends. (Interest rates,
+            prices, supply/demand).
+          </li>
+          <li>Lead generation (In-Person, Internet, phone, and email).</li>
+          <li>Working with existing customers to help them find homes.</li>
+          <li>Holding open houses.</li>
+        </JobDetails>
+      </JobContainer>
 
-            {/* California Home Team */}
-            <div>
-              <p className="companyNameCHT">California Home Team</p>
+      {/* Karma */}
+      <JobContainer>
+        <CompanyName>Karma Automotive</CompanyName>
 
-              <p className="companyDescription">
-                California Home Team is a small real estate company that has
-                been very successful in the real estate business for over 30
-                years. They specialize in orange county residential homes.{" "}
-              </p>
-              <p className="jobTitle">Real Estate Consultant (2019-2020)</p>
-              <ul className="jobDetails">
-                <li>
-                  Working with investors on investment properties and
-                  researching the appropriate statistics.
-                </li>
-                <li>Purchase Contract negotiation.</li>
-                <li>Online Advertising.</li>
-                <li>Holding open houses and advertising for the event.</li>
-                <li>
-                  Staying up to date on market conditions and trends. (Interest
-                  rates, prices, supply/demand).
-                </li>
-                <li>
-                  Lead generation (In-Person, Internet, phone, and email).
-                </li>
-                <li>
-                  Working with existing customers to help them find homes.
-                </li>
-                <li>Holding open houses.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <PhotoContainer>
+          <KarmaImage src={Karma} alt="Karma" />
+        </PhotoContainer>
+        <CompanyDescription>
+          Karma is a design and manufacturer of high-class luxury hybrid cars
+          designed to continually challenge the market for the sustainable
+          future of luxury cars.
+        </CompanyDescription>
+        <JobTitle>
+          Vehicle Integration and Validation Engineer (2019-2019)
+        </JobTitle>
+        <JobDetails>
+          <li>
+            Correlated between marketing, senior management, and design studio,
+            accessing the feasibility of producing features against customer
+            requirements and exceeding those expectations where viable based on
+            cost and manufacturability.
+          </li>
+          <li>
+            Managed multiple projects with cross-functional design engineering
+            teams and managers to ensure the vehicle meets critical targets.{" "}
+          </li>
+          <li>
+            Responsible for overseeing an average of 15 projects simultaneously,
+            which resulted in an overall 90% completion rate to set targets.
+          </li>
+        </JobDetails>
 
-        {/* Karma */}
-        <div className="viewContainer">
-          <div className="jobContainerImage">
-            <div className="karmaPhotoContainer">
-              <p className="karmaTitle">Karma Automotive</p>
-            </div>
-            <p className="companyDescriptioUnderImage">
-              Karma is a design and manufacturer of high-class luxury hybrid
-              cars designed to continually challenge the market for the
-              sustainable future of luxury cars.
-            </p>
-            <p className="jobTitle">
-              Vehicle Integration and Validation Engineer (2019-2019)
-            </p>
-            <ul className="jobDetails">
-              <li>
-                Correlated between marketing, senior management, and design
-                studio, accessing the feasibility of producing features against
-                customer requirements and exceeding those expectations where
-                viable based on cost and manufacturability.
-              </li>
-              <li>
-                Managed multiple projects with cross-functional design
-                engineering teams and managers to ensure the vehicle meets
-                critical targets.{" "}
-              </li>
-              <li>
-                Responsible for overseeing an average of 15 projects
-                simultaneously, which resulted in an overall 90% completion rate
-                to set targets.
-              </li>
-            </ul>
+        <JobTitle>Test Engineer (2016 – 2019)</JobTitle>
+        <JobDetails>
+          <li>
+            Successfully started up and operated a fastener and material test
+            lab. This initiative resulted in an operating annual cost savings of
+            $375,000 year over year by eliminating the need to outsource.
+          </li>
+          <li>
+            Eliminated the need for specialty fasteners by successfully
+            standardizing fasteners used throughout the vehicle. This initiative
+            saved approximately 1.7M over the production cycle of vehicles for
+            over two years.
+          </li>
+          <li>
+            Developed test plans and documented test procedures to standardize a
+            variety of testing processes.
+          </li>
+          <li>
+            Operated Micro Control MC911 and 250KN Instron tensile equipment.
+          </li>
+          <li>
+            Established relationships with shop floor personnel performing root
+            cause analysis onsite at the vehicle production plant facility.
+          </li>
+        </JobDetails>
+      </JobContainer>
 
-            <p className="jobTitle">Test Engineer (2016 – 2019)</p>
-            <ul className="jobDetails">
-              <li>
-                Successfully started up and operated a fastener and material
-                test lab. This initiative resulted in an operating annual cost
-                savings of $375,000 year over year by eliminating the need to
-                outsource.
-              </li>
-              <li>
-                Eliminated the need for specialty fasteners by successfully
-                standardizing fasteners used throughout the vehicle. This
-                initiative saved approximately 1.7M over the production cycle of
-                vehicles for over two years.
-              </li>
-              <li>
-                Developed test plans and documented test procedures to
-                standardize a variety of testing processes.
-              </li>
-              <li>
-                Operated Micro Control MC911 and 250KN Instron tensile
-                equipment.
-              </li>
-              <li>
-                Established relationships with shop floor personnel performing
-                root cause analysis onsite at the vehicle production plant
-                facility.
-              </li>
-            </ul>
-          </div>
-        </div>
+      {/* Bourns */}
+      <JobContainer>
+        <CompanyName>Bourns Electronics</CompanyName>
+        <PhotoContainer>
+          <KarmaImage src={Karma} alt="Karma" />
+        </PhotoContainer>
 
-        {/* Bourns */}
-        <div className="viewContainer">
-          <div>
-            <p className="companyName">Bourns Electronics</p>
+        <CompanyDescription>
+          Bourns is an electronics company that develops, manufactures, and
+          supplies electronic components to various industries, including
+          automotive, industrial, instrumentation, medical electronics, consumer
+          equipment, and portable electronics.
+        </CompanyDescription>
+        <JobTitle>Electronics Engineer (Internship Summer 2015)</JobTitle>
+        <JobDetails>
+          <li>
+            Programmed an Arduino to process multiple analog inputs to output a
+            stable and consistent digital reading.{" "}
+          </li>
+          <li>
+            Designed using Autodesk Inventor, 3D printed, and tested air
+            actuated linear rail systems, participating in general
+            troubleshooting during the entire design process.
+          </li>
+          <li>
+            Assisted in the design of a CNC soldering machine, which was
+            implemented into the production process.{" "}
+          </li>
+          <li>
+            Gained an understanding of electronics at the component level.
+          </li>
+        </JobDetails>
+      </JobContainer>
 
-            <p className="companyDescription">
-              Bourns is an electronics company that develops, manufactures, and
-              supplies electronic components to various industries, including
-              automotive, industrial, instrumentation, medical electronics,
-              consumer equipment, and portable electronics.
-            </p>
-            <p className="jobTitle">
-              Electronics Engineer (Internship Summer 2015)
-            </p>
-            <ul className="jobDetails">
-              <li>
-                Programmed an Arduino to process multiple analog inputs to
-                output a stable and consistent digital reading.{" "}
-              </li>
-              <li>
-                Designed using Autodesk Inventor, 3D printed, and tested air
-                actuated linear rail systems, participating in general
-                troubleshooting during the entire design process.
-              </li>
-              <li>
-                Assisted in the design of a CNC soldering machine, which was
-                implemented into the production process.{" "}
-              </li>
-              <li>
-                Gained an understanding of electronics at the component level.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Dougans */}
-        <div className="viewContainer">
-          <div className="jobContainerImage">
-            <div className="dougansPhotoContainer">
-              <p className="dougansTitle">Dougans Racing</p>
-            </div>
-            <p className="companyDescriptioUnderImage">
-              Dougan’s is a racing engine building business and machine shop.
-              They primarily operate with trophy trucks that race in the Baja
-              1000 sector. (This is how I met my Fiancé, I was friends with her
-              dad who was the head engine builder)
-            </p>
-            <p className="jobTitle">Dyno Technician (2010-2015) </p>
-            <ul className="jobDetails">
-              <li>
-                Coordinate between various machinists and technicians preparing
-                racing engines for final assembly.
-              </li>
-              <li>
-                Trained new employees regarding technical work to be performed,
-                covering each phase's importance for a full understanding of the
-                process infrastructure through each stage.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      {/* Dougans */}
+      <JobContainer>
+        <CompanyName>Dougans Racing</CompanyName>
+        <PhotoContainer>
+          <KarmaImage src={Karma} alt="Karma" />
+        </PhotoContainer>
+        <CompanyDescription>
+          Dougan’s is a racing engine building business and machine shop. They
+          primarily operate with trophy trucks that race in the Baja 1000
+          sector. (This is how I met my Fiancé, I was friends with her dad who
+          was the head engine builder)
+        </CompanyDescription>
+        <JobTitle>Dyno Technician (2010-2015) </JobTitle>
+        <JobDetails>
+          <li>
+            Coordinate between various machinists and technicians preparing
+            racing engines for final assembly.
+          </li>
+          <li>
+            Trained new employees regarding technical work to be performed,
+            covering each phase's importance for a full understanding of the
+            process infrastructure through each stage.
+          </li>
+        </JobDetails>
+      </JobContainer>
     </Wrapper>
   );
 }
