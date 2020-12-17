@@ -11,17 +11,6 @@ import Experience from "./pages/experience";
 import Portfolio from "./pages/portfolio";
 import NavBar from "./components/navBar";
 
-import Header from "./components/header";
-import SocialLinks from "./components/socialLinks";
-import Navigation from "./components/navigation";
-// import Objective from "./components/objective";
-// import Portfolio from "./components/portfolio";
-// import Experience from "./components/experience";
-// import Education from "./components/education";
-// import Skills from "./components/skills";
-import LettersOfRecommendation from "./components/lettersOfRecommendation";
-// import Hobbies from "./components/hobbies";
-import Footer from "./components/footer";
 
 import "./App.css";
 

@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import textBackground from "../assets/swirlBackground2.png";
+import { device } from "../utils/device";
 
-import Karma from "../assets/companyImages/karma.jpg";
+import cht from "../assets/companyImages/cht.png";
+import karma from "../assets/companyImages/karma.png";
+import bourns from "../assets/companyImages/bourns.png";
+import dougans from "../assets/companyImages/dougans.png";
 
 const Wrapper = styled.section`
   display: flex;
@@ -21,17 +25,32 @@ const JobContainer = styled.section`
 
 const PhotoContainer = styled.section`
   width: 100%;
-  height: 304px;
+  max-height: 304px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   overflow: hidden;
+  position: relative;
+  margin-top: 50px;
+`;
+
+const ChtImage = styled.img`
+  width: 100%;
 `;
 
 const KarmaImage = styled.img`
-  width: 900px;
+  /* width: 900px; */
+  width: 100%;
+`;
+
+const BournsImage = styled.img`
+  width: 100%;
+`;
+
+const DougansImage = styled.img`
+  width: 100%;
 `;
 
 const Section = styled.h1`
@@ -48,30 +67,40 @@ const CompanyName = styled.h2`
   color: white;
   font-weight: normal;
   font-size: 26px;
-  line-height: 15px;
   text-align: center;
-  position: relative;
-  top: 300px;
+  position: absolute;
+  width: 100%;
+  bottom: 7px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  @media ${device.mobileS} {
+    /* top: 256px; */
+  }
+
+  @media ${device.tablet} {
+    /* top: 293px;
+    color: green; */
+  }
 `;
 
 const JobTitle = styled.h3`
   font-weight: normal;
   font-size: 20px;
-  line-height: 15px;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 20px 0px 20px;
 `;
 
 const CompanyDescription = styled.h3`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 10px;
   max-width: 580px;
   font-weight: 300;
   font-size: 12px;
   line-height: 19px;
   text-align: justify;
+  margin: 20px 20px 10px 20px;
 `;
 
 const JobDetails = styled.ul`
@@ -82,6 +111,7 @@ const JobDetails = styled.ul`
   font-size: 16px;
   line-height: 25px;
   text-align: left;
+  margin: 10px 28px;
 `;
 
 export default function Experience() {
@@ -89,9 +119,9 @@ export default function Experience() {
     <Wrapper>
       <Section>Experience</Section>
       <JobContainer>
-        <CompanyName>California Home Team</CompanyName>
         <PhotoContainer>
-          <KarmaImage src={Karma} alt="Karma" />
+          <CompanyName>California Home Team</CompanyName>
+          <ChtImage src={cht} alt="California Home Team" />
         </PhotoContainer>
         <CompanyDescription>
           California Home Team is a small real estate company that has been very
@@ -119,10 +149,9 @@ export default function Experience() {
 
       {/* Karma */}
       <JobContainer>
-        <CompanyName>Karma Automotive</CompanyName>
-
         <PhotoContainer>
-          <KarmaImage src={Karma} alt="Karma" />
+          <CompanyName>Karma Automotive</CompanyName>
+          <KarmaImage src={karma} alt="Karma Automotive" />
         </PhotoContainer>
         <CompanyDescription>
           Karma is a design and manufacturer of high-class luxury hybrid cars
@@ -178,9 +207,9 @@ export default function Experience() {
 
       {/* Bourns */}
       <JobContainer>
-        <CompanyName>Bourns Electronics</CompanyName>
         <PhotoContainer>
-          <KarmaImage src={Karma} alt="Karma" />
+          <CompanyName>Bourns Electronics</CompanyName>
+          <BournsImage src={bourns} alt="bourns" />
         </PhotoContainer>
 
         <CompanyDescription>
@@ -212,9 +241,9 @@ export default function Experience() {
 
       {/* Dougans */}
       <JobContainer>
-        <CompanyName>Dougans Racing</CompanyName>
         <PhotoContainer>
-          <KarmaImage src={Karma} alt="Karma" />
+          <CompanyName>Dougans Racing</CompanyName>
+          <DougansImage src={dougans} alt="dougans" />
         </PhotoContainer>
         <CompanyDescription>
           Dougan’s is a racing engine building business and machine shop. They

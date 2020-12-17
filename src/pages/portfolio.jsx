@@ -6,12 +6,6 @@ import styled from "styled-components";
 
 import textBackground from "../assets/swirlBackground2.png";
 
-const Wrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  padding-bottom: 200px;
-`;
 
 const IconContainer = styled.section`
   display: flex;
@@ -30,7 +24,7 @@ const Container = styled.section`
 `;
 
 const HawaiiLavaZones = styled.img`
-  width: 183px;
+  width: 167px;
 `;
 
 const ChungAndAssociates = styled.img`

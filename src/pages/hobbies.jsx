@@ -9,13 +9,6 @@ const Wrapper = styled.section`
   padding-bottom: 200px;
 `;
 
-const SkillContainer = styled.section`
-  margin: 7px 0px 6px 0px;
-  width: 213px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-`;
-
 const Section = styled.h1`
   background: url(${textBackground});
   -webkit-text-fill-color: transparent;
@@ -33,10 +26,11 @@ const HobbyList = styled.ul`
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
-  text-align: left;
+  text-align: center;
   list-style-type: none;
   padding-inline-start: 0px;
 `;
+
 export default function Hobbies() {
   return (
     <Wrapper>

@@ -5,8 +5,6 @@ import styled from "styled-components";
 import swirlBackground from "../assets/swirlBackground.jpg";
 import profile from "../assets/profile.png";
 import burgerSolid from "../assets/buttons/burgerSolid.png";
-import burgerHover from "../assets/buttons/burgerHover.png";
-import textBackground from "../assets/swirlBackground3.png";
 import line from "../assets/lines/line.png";
 import line2 from "../assets/lines/line2.png";
 
