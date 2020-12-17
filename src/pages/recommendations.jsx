@@ -2,12 +2,36 @@ import React, { useState } from "react";
 import BobsLetter from "../components/bobsLetter";
 import styled from "styled-components";
 import textBackground from "../assets/swirlBackground2.png";
+import line from "../assets/swirlBackground.jpg";
 
 const Wrapper = styled.section`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 44px;
+  flex-direction: column;
+  place-items: center;
+  padding-bottom: 200px;
+`;
+
+const LetterContainer = styled.section`
+  max-width: 580px;
+  margin: 0px 41px;
+`;
+
+const LetterBody = styled.section`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: justify;
+`;
+
+const Line = styled.section`
+  background-image: url(${line});
+  background-position: -2px;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 75px;
 `;
 
 const Section = styled.h1`
@@ -18,7 +42,35 @@ const Section = styled.h1`
   text-align: center;
   color: #2c2d52;
   font-size: 34px;
-  margin-top: 10vw;
+  margin-top: 50px;
+  margin-bottom: 28px;
+`;
+
+const PersonTitle = styled.p`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: justify;
+`;
+
+const PersonName = styled.p`
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: justify;
+  margin-top: 31px;
+`;
+
+const SourceLink = styled.p`
+  cursor: pointer;
+  text-decoration-line: underline;
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 11px;
+  text-align: center;
 `;
 
 export default function Recommendations() {
@@ -38,8 +90,7 @@ export default function Recommendations() {
     if (!displayLetter) {
       return (
         <>
-          <div className="lettersOfRecommendationBody">
-            {" "}
+          <LetterBody>
             <p>To whom it may concern,</p>
             <p>
               I have known Isaac Householder while he worked at Karma automotive
@@ -72,18 +123,16 @@ export default function Recommendations() {
               I led.
             </p>
             <p>Sincerely,</p>
-          </div>
+          </LetterBody>
           <a
             href="https://www.linkedin.com/in/robert-bob-kruse-459a73101/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="lettersOfRecommendationName">Robert A. Kruse</p>
+            <PersonName>Robert A. Kruse</PersonName>
           </a>
 
-          <p className="lettersOfRecommendationTitle">
-            CTO / Karma Automotive{" "}
-          </p>
+          <PersonTitle>CTO / Karma Automotive </PersonTitle>
         </>
       );
     }
@@ -113,143 +162,119 @@ export default function Recommendations() {
 
   return (
     <Wrapper>
-      {/* Bob */}
-
-      <div className="viewContainerExtended">
-        <div className="smallSpacer"></div>
-        <h4 id="letters" className="color lettersOfRecommendationTitleSpacing">
-          Letters
-        </h4>
-        <h4 className="color lettersOfRecommendationTitleSpacing">of</h4>
-        <h4 className="color lettersOfRecommendationTitleSpacing">
-          Recommendation
-        </h4>
-        <div className="lettersOfRecommendationContainer">
-          <div className="lettersOfRecommendationLine"></div>
-          {renderBobsLetter()}
-          {renderViewSourceButton()}
-          <div className="lettersOfRecommendationLine"></div>
-        </div>
-      </div>
-
-      {/* John */}
-      <div className="viewContainerExtended">
-        <div className="lettersOfRecommendationContainer">
-          <div className="lettersOfRecommendationLine"></div>
-
-          <div className="lettersOfRecommendationBody">
-            <p>
-              I had the pleasure of Isaac in my group for three years at Karma.
-              Incredible bright, enthusiastic, smart, intelligent with a vison
-              of what he wants from his life. Isaac is a very talented engineer
-              with a bright future.
-            </p>
-          </div>
+      <Section>Letters of Recommendation</Section>
+      <LetterContainer>
+        {renderBobsLetter()}
+        {renderViewSourceButton()}
+      </LetterContainer>
+      <LetterContainer>
+        <Line />
+        <LetterBody>
+          <p>
+            I had the pleasure of Isaac in my group for three years at Karma.
+            Incredible bright, enthusiastic, smart, intelligent with a vison of
+            what he wants from his life. Isaac is a very talented engineer with
+            a bright future.
+          </p>
+        </LetterBody>
+        <a
+          href="https://www.linkedin.com/in/john-cooper-77054225/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PersonName>John Cooper</PersonName>
+        </a>
+        <PersonTitle>
+          VP - Vehicle Integration, Vehicle Engineering and Safety / Karma
+          Automotive
+        </PersonTitle>
+        <SourceLink>
+          {" "}
           <a
-            href="https://www.linkedin.com/in/john-cooper-77054225/"
+            href="https://www.linkedin.com/in/isaachouseholder/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="lettersOfRecommendationName">John Cooper</p>
+            Click to view source
           </a>
-          <p className="lettersOfRecommendationTitle">
-            VP - Vehicle Integration, Vehicle Engineering and Safety / Karma
-            Automotive
+        </SourceLink>
+      </LetterContainer>
+
+      <LetterContainer>
+        <Line />{" "}
+        <LetterBody>
+          <p>To whom it may concern,</p>
+          <p>
+            It is my pleasure and honor to recommend Isaac for opportunities in
+            the fastener field. I worked with Isaac for 3 years as his manager
+            at Karma Automotive, where he supported all fastener engineering
+            requests across all vehicle systems. Isaac also provided thorough
+            documentation and reports to the teams upon completing his testing.
           </p>
-          <p className="lettersOfRecommendationLink">
-            {" "}
-            <a
-              href="https://www.linkedin.com/in/isaachouseholder/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click to view source
-            </a>
+          <p>
+            As a Test Engineer, Isaac enjoys a challenge. He has demonstrated
+            the skill necessary to learn how to use several type of specialized
+            testing equipment, understand and communicate results to the
+            engineering teams.
           </p>
-          <div className="lettersOfRecommendationLine"></div>
-        </div>
-      </div>
-      <div className="viewContainerExtended">
-        <div className="lettersOfRecommendationContainer">
-          <div className="lettersOfRecommendationLine"></div>{" "}
-          <div className="lettersOfRecommendationBody">
-            <p>To whom it may concern,</p>
-            <p>
-              It is my pleasure and honor to recommend Isaac for opportunities
-              in the fastener field. I worked with Isaac for 3 years as his
-              manager at Karma Automotive, where he supported all fastener
-              engineering requests across all vehicle systems. Isaac also
-              provided thorough documentation and reports to the teams upon
-              completing his testing.
-            </p>
-            <p>
-              As a Test Engineer, Isaac enjoys a challenge. He has demonstrated
-              the skill necessary to learn how to use several type of
-              specialized testing equipment, understand and communicate results
-              to the engineering teams.
-            </p>
-            <p>
-              Isaac is very dependable and personable and has a great outlook,
-              he will do well and and sure to exceed expectations with any
-              company he works at.
-            </p>
-          </div>
+          <p>
+            Isaac is very dependable and personable and has a great outlook, he
+            will do well and and sure to exceed expectations with any company he
+            works at.
+          </p>
+        </LetterBody>
+        <a
+          href="https://www.linkedin.com/in/steven-foster-60680a108/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PersonName>Steven Foster</PersonName>
+        </a>
+        <PersonTitle>
+          Manager, Fastener Engineering / Karma Automotive{" "}
+        </PersonTitle>
+        <SourceLink>
+          {" "}
           <a
-            href="https://www.linkedin.com/in/steven-foster-60680a108/"
+            href="https://www.linkedin.com/in/isaachouseholder/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="lettersOfRecommendationName">Steven Foster</p>
+            Click to view source
           </a>
-          <p className="lettersOfRecommendationTitle">
-            Manager, Fastener Engineering / Karma Automotive{" "}
+        </SourceLink>
+      </LetterContainer>
+
+      <LetterContainer>
+        <Line />
+        <LetterBody>
+          <p>
+            Isaac brings enthusiasm and creativity to any task, and thinks
+            outside the box. With his often unique perspective he would be an
+            asset to any engineering, marketing or sales organization,
+            complemented by his people skills and technical knowledge.
           </p>
-          <p className="lettersOfRecommendationLink">
-            {" "}
-            <a
-              href="https://www.linkedin.com/in/isaachouseholder/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click to view source
-            </a>
-          </p>
-          <div className="lettersOfRecommendationLine"></div>
-        </div>
-      </div>
-      <div className="viewContainerExtended">
-        <div className="lettersOfRecommendationContainer">
-          <div className="lettersOfRecommendationLine"></div>{" "}
-          <div className="lettersOfRecommendationBody">
-            <p>
-              Isaac brings enthusiasm and creativity to any task, and thinks
-              outside the box. With his often unique perspective he would be an
-              asset to any engineering, marketing or sales organization,
-              complemented by his people skills and technical knowledge.
-            </p>
-          </div>
+        </LetterBody>
+        <a
+          href="https://www.linkedin.com/in/charlie-galea-40428520/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <PersonName>Charlie Galea</PersonName>
+        </a>
+        <PersonTitle>
+          Manager, Vehicle Integration & Validation / Karma Automotive{" "}
+        </PersonTitle>
+        <SourceLink>
           <a
-            href="https://www.linkedin.com/in/charlie-galea-40428520/"
+            href="https://www.linkedin.com/in/isaachouseholder/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="lettersOfRecommendationName">Charlie Galea</p>
+            Click to view source
           </a>
-          <p className="lettersOfRecommendationTitle">
-            Manager, Vehicle Integration & Validation / Karma Automotive{" "}
-          </p>
-          <p className="lettersOfRecommendationLink">
-            <a
-              href="https://www.linkedin.com/in/isaachouseholder/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Click to view source
-            </a>
-          </p>
-          <div className="lettersOfRecommendationLine"></div>
-        </div>
-      </div>
+        </SourceLink>
+      </LetterContainer>
     </Wrapper>
   );
 }
