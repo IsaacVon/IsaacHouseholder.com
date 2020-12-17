@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import BobsLetter from "../components/bobsLetter";
 import styled from "styled-components";
-import textBackground from "../assets/swirlBackground2.png";
-import line from "../assets/swirlBackground.jpg";
+import textBackground from "../assets/swirlBackground3.png";
+import line from "../assets/lines/line.png";
+import lineTwo from "../assets/lines/line2.png";
 
 const Wrapper = styled.section`
   display: flex;
@@ -27,6 +28,15 @@ const LetterBody = styled.section`
 
 const Line = styled.section`
   background-image: url(${line});
+  background-position: -2px;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 75px;
+`;
+
+const LineTwo = styled.section`
+  background-image: url(${lineTwo});
   background-position: -2px;
   height: 1px;
   width: 100%;
@@ -201,7 +211,7 @@ export default function Recommendations() {
       </LetterContainer>
 
       <LetterContainer>
-        <Line />{" "}
+        <LineTwo />{" "}
         <LetterBody>
           <p>To whom it may concern,</p>
           <p>
@@ -246,7 +256,7 @@ export default function Recommendations() {
       </LetterContainer>
 
       <LetterContainer>
-        <Line />
+        <LineTwo />
         <LetterBody>
           <p>
             Isaac brings enthusiasm and creativity to any task, and thinks
