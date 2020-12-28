@@ -37,6 +37,10 @@ const BurgerContainer = styled.section`
   position: absolute;
   right: 36px;
   top: 115px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const RightContainer = styled.section`
