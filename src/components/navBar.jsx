@@ -96,15 +96,9 @@ const Button = styled.button`
 
   &:hover {
     transition: background-color 0.2s ease-in-out;
-    color: #1deff4;
+    color: #5db8d7;
 
-    background: url(${swirlBackground});
     background-size: 46px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    /* background-color: #f89143; */
   }
 
   &:focus {
@@ -154,23 +148,23 @@ export default function NavBar() {
     if (navExpanded)
       return (
         <NavDrawer>
-          <Button currentPage={false}>
+          <Button>
             <Link to="/portfolio">Portfolio</Link>
           </Button>
-          <Button currentPage={false}>
+          <Button>
             <Link to="/experience">Experience</Link>
           </Button>
 
-          <Button currentPage={false}>
+          <Button>
             <Link to="/skills">Skills</Link>
           </Button>
-          <Button currentPage={false}>
+          <Button>
             <Link to="/education">Education</Link>
           </Button>
-          <Button currentPage={false}>
+          <Button>
             <Link to="/recommendations">Recommendations</Link>
           </Button>
-          <Button currentPage={false}>
+          <Button>
             <Link to="/hobbies">Hobbies</Link>
           </Button>
           <LineBottomNav src={line} alt="line" />
@@ -206,14 +200,14 @@ export default function NavBar() {
           <LineTop src={line2} alt="line" />
 
           <LeftContainer>
-            <Button currentPage={false}>
+            <Button>
               <Link to="/portfolio">Portfolio</Link>
             </Button>
-            <Button currentPage={false}>
+            <Button>
               <Link to="/experience">Experience</Link>
             </Button>
 
-            <Button currentPage={false}>
+            <Button>
               <Link to="/skills">Skills</Link>
             </Button>
           </LeftContainer>
@@ -229,13 +223,13 @@ export default function NavBar() {
         <RightWrapper>
           <LineTop src={line2} alt="line" />
           <RightContainer>
-            <Button currentPage={false}>
+            <Button>
               <Link to="/education">Education</Link>
             </Button>
-            <Button currentPage={false}>
+            <Button>
               <Link to="/recommendations">Recommendations</Link>
             </Button>
-            <Button currentPage={false}>
+            <Button>
               <Link to="/hobbies">Hobbies</Link>
             </Button>
           </RightContainer>
