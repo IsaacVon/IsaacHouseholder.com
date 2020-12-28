@@ -151,21 +151,25 @@ export default function Recommendations() {
   const renderViewSourceButton = () => {
     if (displayLetter) {
       return (
-        <p
-          className="lettersOfRecommendationLink"
-          onClick={() => handleShowLetterClick()}
-        >
-          Click to hide source
-        </p>
+        <SourceLink>
+          <p
+            className="lettersOfRecommendationLink"
+            onClick={() => handleShowLetterClick()}
+          >
+            Click to hide source
+          </p>
+        </SourceLink>
       );
     } else {
       return (
-        <p
-          className="lettersOfRecommendationLink"
-          onClick={() => handleShowLetterClick()}
-        >
-          Click to view source
-        </p>
+        <SourceLink>
+          <p
+            className="lettersOfRecommendationLink"
+            onClick={() => handleShowLetterClick()}
+          >
+            Click to view source
+          </p>
+        </SourceLink>
       );
     }
   };

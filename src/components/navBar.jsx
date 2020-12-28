@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import swirlBackground from "../assets/swirlBackground3.png";
 import profile from "../assets/profile.png";
 import burgerSolid from "../assets/buttons/burgerSolid.png";
 import line from "../assets/lines/line.png";
