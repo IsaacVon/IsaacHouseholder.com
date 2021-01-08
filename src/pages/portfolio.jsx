@@ -6,6 +6,7 @@ import chungAndAssociates from "../assets/portfolioIcons/chung.svg";
 import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZonesText.png";
 import doneWithIt from "../assets/portfolioIcons/doneWithIt.png";
 import textBackground from "../assets/swirlBackground2.png";
+import PortfolioItemDetails from "../components/PortfolioItemDetails";
 
 const IconContainer = styled.section`
   display: flex;
@@ -55,7 +56,8 @@ const Section = styled.h1`
 export default function Portfolio() {
   return (
     <>
-      <Section>Portfolio</Section>
+      <PortfolioItemDetails />
+      {/* <Section>Portfolio</Section>
       <IconContainer>
         <Container>
           <a
@@ -96,7 +98,7 @@ export default function Portfolio() {
             <DoneWithIt src={doneWithIt} alt="DoneWithIt" />
           </a>
         </Container>
-      </IconContainer>
+      </IconContainer> */}
     </>
   );
 }

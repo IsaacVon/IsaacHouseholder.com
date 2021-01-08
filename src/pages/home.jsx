@@ -6,6 +6,7 @@ import linkedIn from "../assets/socialLinks/linkedIn.png";
 import textBackground from "../assets/swirlBackground2.png";
 
 import styled from "styled-components";
+import IconLink from "../components/IconLink";
 
 const Wrapper = styled.section`
   display: flex;
@@ -60,29 +61,24 @@ export default function Home() {
       </ContactInfo>
 
       <SocialLinkContainer>
-        <a
-          href="https://github.com/IsaacVon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialIcon src={gitHub} alt="gitHub" />
-        </a>
-
-        <a
-          href="mailto:isaachouseholder@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialIcon src={gmail} alt="gmail" />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/isaachouseholder/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialIcon src={linkedIn} alt="linkedIn" />
-        </a>
+        <IconLink
+          url="https://github.com/IsaacVon"
+          img={gitHub}
+          alt="github"
+          size="34px"
+        />
+        <IconLink
+          url="mailto:isaachouseholder@gmail.com"
+          img={gmail}
+          alt="gmail"
+          size="34px"
+        />
+        <IconLink
+          url="https://www.linkedin.com/in/isaachouseholder/"
+          img={linkedIn}
+          alt="linkedIn"
+          size="34px"
+        />
       </SocialLinkContainer>
     </Wrapper>
   );
