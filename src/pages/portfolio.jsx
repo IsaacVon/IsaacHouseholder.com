@@ -54,54 +54,60 @@ const Section = styled.h1`
 `;
 
 export default function Portfolio() {
-  const [showDetails, setShowDetails] = useState(true)
-
+  const [showDetails, setShowDetails] = useState(true);
 
   return (
     <>
       {showDetails && <PortfolioItemDetails setShowDetails={setShowDetails} />}
-      {/* <Section>Portfolio</Section>
-      <IconContainer>
-        <Container>
-          <a
-            href="https://hawaiilavazones.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <HawaiiLavaZones src={hawaiiLavaZones} alt="Hawaii Lava Zones" />
-          </a>
-        </Container>
-        <Container>
-          <a
-            href="http://chungandassociates.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <ChungAndAssociates
-              src={chungAndAssociates}
-              alt="Chung And Associates"
-            />
-          </a>
-        </Container>
-        <Container>
-          <a
-            href="https://www.whatgrows.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <WhatGrows src={whatGrows} alt="What Grows" />
-          </a>
-        </Container>{" "}
-        <Container>
-          <a
-            href="https://expo.io/@isaacvon/projects/DoneWithIt?release-channel=staging"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <DoneWithIt src={doneWithIt} alt="DoneWithIt" />
-          </a>
-        </Container>
-      </IconContainer> */}
+      {!showDetails && (
+        <>
+          <Section>Portfolio</Section>
+          <IconContainer>
+            <Container>
+              <a
+                href="https://hawaiilavazones.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <HawaiiLavaZones
+                  src={hawaiiLavaZones}
+                  alt="Hawaii Lava Zones"
+                />
+              </a>
+            </Container>
+            <Container>
+              <a
+                href="http://chungandassociates.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ChungAndAssociates
+                  src={chungAndAssociates}
+                  alt="Chung And Associates"
+                />
+              </a>
+            </Container>
+            <Container>
+              <a
+                href="https://www.whatgrows.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <WhatGrows src={whatGrows} alt="What Grows" />
+              </a>
+            </Container>{" "}
+            <Container>
+              <a
+                href="https://expo.io/@isaacvon/projects/DoneWithIt?release-channel=staging"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <DoneWithIt src={doneWithIt} alt="DoneWithIt" />
+              </a>
+            </Container>
+          </IconContainer>
+        </>
+      )}
     </>
   );
 }

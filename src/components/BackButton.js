@@ -5,7 +5,7 @@ import backIcon from "../assets/buttons/backIcon.svg";
 import colors from "../config/colors";
 
 const BackIcon = styled.img`
-  width: 106px;
+  width: 64px;
   border-radius: 24px;
   overflow: hidden;
   cursor: pointer;
