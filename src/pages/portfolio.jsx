@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import whatGrows from "../assets/portfolioIcons/whatgrows.svg";
@@ -54,9 +54,12 @@ const Section = styled.h1`
 `;
 
 export default function Portfolio() {
+  const [showDetails, setShowDetails] = useState(true)
+
+
   return (
     <>
-      <PortfolioItemDetails />
+      {showDetails && <PortfolioItemDetails setShowDetails={setShowDetails} />}
       {/* <Section>Portfolio</Section>
       <IconContainer>
         <Container>

@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+import colors from "../config/colors";
+import gitHub from "../assets/socialLinks/gitHub.png";
 import textBackground from "../assets/swirlBackground2.png";
+import Button from "./Button";
+import IconLink from "./IconLink";
+import BackButton from "./BackButton";
 
 const Wrapper = styled.section`
   display: flex;
@@ -11,6 +16,7 @@ const Wrapper = styled.section`
 
 const Outline = styled.section`
   position: relative;
+  color: ${colors.black};
 
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +27,7 @@ const Outline = styled.section`
 
   min-height: 500px;
   border-radius: 25px;
-  border: 1px solid black;
+  border: 1px solid ${colors.black};
 `;
 
 const Header = styled.h1`
@@ -37,6 +43,14 @@ const Header = styled.h1`
 
   top: 20px;
   left: 20px;
+`;
+
+const LinksContainer = styled.section`
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  bottom: 20px;
 `;
 
 const portfolioDetails = [
@@ -71,15 +85,25 @@ const portfolioDetails = [
     gitHubUrl: "w",
   },
 ];
-console.log("portfolioDetails", portfolioDetails[0].gitHubUrl);
 
-function PortfolioItemDetails({ projectName, projectDescription }) {
+function PortfolioItemDetails({ setShowDetails }) {
   return (
     <Wrapper>
       <Outline>
+        <BackButton handleClick={() => setShowDetails(false)} />
         <Header>Portfolio</Header>
 
         {portfolioDetails[0].image}
+
+        <LinksContainer>
+          <IconLink
+            url="https://github.com/IsaacVon/WhatGrows.org"
+            img={gitHub}
+            alt="github"
+            size="31px"
+          />
+          <Button title="Visit Site" url="https://www.whatgrows.org/" />
+        </LinksContainer>
       </Outline>
     </Wrapper>
   );
