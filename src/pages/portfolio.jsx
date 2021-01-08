@@ -1,11 +1,11 @@
 import React from "react";
+import styled from "styled-components";
+
 import whatGrows from "../assets/portfolioIcons/whatgrows.svg";
 import chungAndAssociates from "../assets/portfolioIcons/chung.svg";
 import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZonesText.png";
-import styled from "styled-components";
-
+import doneWithIt from "../assets/portfolioIcons/doneWithIt.png";
 import textBackground from "../assets/swirlBackground2.png";
-
 
 const IconContainer = styled.section`
   display: flex;
@@ -15,7 +15,7 @@ const IconContainer = styled.section`
 `;
 
 const Container = styled.section`
-  flex: 0 1 300px;
+  flex: 1 1 300px;
   margin: 5px;
   display: grid;
   place-items: center;
@@ -31,8 +31,14 @@ const ChungAndAssociates = styled.img`
   width: 150px;
 `;
 
-const ImageWhatGrows = styled.img`
+const WhatGrows = styled.img`
   width: 145px;
+`;
+
+const DoneWithIt = styled.img`
+  width: 106px;
+  border-radius: 24px;
+  overflow: hidden;
 `;
 
 const Section = styled.h1`
@@ -78,7 +84,16 @@ export default function Portfolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ImageWhatGrows src={whatGrows} alt="What Grows" />
+            <WhatGrows src={whatGrows} alt="What Grows" />
+          </a>
+        </Container>{" "}
+        <Container>
+          <a
+            href="https://expo.io/@isaacvon/projects/DoneWithIt?release-channel=staging"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <DoneWithIt src={doneWithIt} alt="DoneWithIt" />
           </a>
         </Container>
       </IconContainer>

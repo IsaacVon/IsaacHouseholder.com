@@ -87,7 +87,7 @@ const CompanyName = styled.h2`
 
 const JobTitle = styled.h3`
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin: 50px 20px 0px 20px;
 `;

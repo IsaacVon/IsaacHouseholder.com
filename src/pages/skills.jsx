@@ -56,12 +56,13 @@ export default function Skills() {
       </SkillContainer>
       <SkillGenre>Code specific Experience </SkillGenre>
       <SkillContainer>
-        <li>React, JSX, Javascript ES6</li>
-        <li>AJAX, JSON, APIs</li>
+        <li>React.js, React-Native, JSX, Javascript ES6</li>
+        <li>AJAX, JSON, APIs, GraphQL</li>
         <li>Node, Google Cloud, Express</li>
         <li>MongoDB, MySQL, JWT</li>
         <li>Git, Github, NPM</li>
-        <li>CSS, HTML, Styled-Components, Material UI, Figma</li>
+        <li>CSS, HTML, Styled-Components, Material UI</li>
+        <li>Formik, Figma</li>
       </SkillContainer>
     </Wrapper>
   );
