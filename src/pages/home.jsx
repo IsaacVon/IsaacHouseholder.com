@@ -4,7 +4,7 @@ import gitHub from "../assets/socialLinks/gitHub.png";
 import gmail from "../assets/socialLinks/gmail.png";
 import linkedIn from "../assets/socialLinks/linkedIn.png";
 import textBackground from "../assets/swirlBackground2.png";
-
+import colors from "../config/colors";
 import styled from "styled-components";
 import IconLink from "../components/IconLink";
 
@@ -22,7 +22,7 @@ const Section = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   text-align: center;
-  color: #2c2d52;
+  color: ${colors.black};
   font-size: 34px;
 `;
 
@@ -43,11 +43,6 @@ const SocialLinkContainer = styled.section`
   height: 78px;
   display: flex;
   place-items: center;
-`;
-
-const SocialIcon = styled.img`
-  height: 34px;
-  margin: 0px 11px;
 `;
 
 export default function Home() {

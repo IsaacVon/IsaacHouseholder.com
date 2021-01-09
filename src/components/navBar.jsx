@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import colors from "../config/colors"
 import profile from "../assets/profile.png";
 import burgerSolid from "../assets/buttons/burgerSolid.png";
 import line from "../assets/lines/line.png";
@@ -89,7 +90,7 @@ const LineBottomNav = styled.img`
 const Button = styled.button`
   flex-shrink: 1;
   width: 150px;
-  color: #2c2d52;
+  color: ${colors.black};
   background-color: white;
   font-size: 15px;
   margin: 1em 0px;
@@ -99,7 +100,7 @@ const Button = styled.button`
 
   &:hover {
     transition: background-color 0.2s ease-in-out;
-    color: #5db8d7;
+    color: ${colors.primary};
 
     background-size: 46px;
   }

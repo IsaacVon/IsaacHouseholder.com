@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+
+import colors from "../config/colors";
 import textBackground from "../assets/swirlBackground2.png";
 
 const Wrapper = styled.section`
@@ -15,7 +17,7 @@ const Section = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   text-align: center;
-  color: #2c2d52;
+  color: ${colors.black};
   font-size: 34px;
   margin-top: 50px;
   margin-bottom: 10px;
@@ -26,7 +28,7 @@ const SchoolName = styled.h2`
   font-weight: normal;
   font-size: 20px;
   line-height: 15px;
-  color: #2c2d52;
+  color: ${colors.black};
   line-height: 22px;
   margin: 15px 52px 0px 52px;
 `;

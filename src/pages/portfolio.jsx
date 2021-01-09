@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import colors from "../config/colors";
 import projectDetails from "../assets/projectDetails";
 import whatGrows from "../assets/portfolioIcons/whatgrows.svg";
 import chungAndAssociates from "../assets/portfolioIcons/chung.svg";
@@ -55,7 +56,7 @@ const Section = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   text-align: center;
-  color: #2c2d52;
+  color: ${colors.black};
   font-size: 34px;
   margin-top: 70px;
 `;

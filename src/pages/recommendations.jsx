@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import BobsLetter from "../components/bobsLetter";
 import styled from "styled-components";
+
+import colors from "../config/colors";
+import BobsLetter from "../components/bobsLetter";
 import textBackground from "../assets/swirlBackground3.png";
 import line from "../assets/lines/line.png";
 import lineTwo from "../assets/lines/line2.png";
@@ -50,7 +52,7 @@ const Section = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   text-align: center;
-  color: #2c2d52;
+  color: ${colors.black};
   font-size: 34px;
   margin-top: 50px;
   margin-bottom: 28px;

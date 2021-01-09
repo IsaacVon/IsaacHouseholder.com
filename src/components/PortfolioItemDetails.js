@@ -40,7 +40,7 @@ const Header = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   text-align: center;
-  color: #2c2d52;
+  color: ${colors.black};
   font-size: 20px;
   margin: 0;
 `;
@@ -73,6 +73,11 @@ const SectionTitle = styled.h2`
 const BodyText = styled.p`
   color: ${colors.black};
   font-size: 11px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: justify;
 `;
 
 const TextContainer = styled.section`
