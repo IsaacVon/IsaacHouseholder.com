@@ -11,14 +11,8 @@ const BackIcon = styled.img`
   cursor: pointer;
 `;
 
-function BackButton({ handleClick }) {
-  return (
-    <BackIcon
-      onClick={handleClick}
-      src={backIcon}
-      alt="backIcon"
-    />
-  );
+function BackButton() {
+  return <BackIcon src={backIcon} alt="backIcon" />;
 }
 
 export default BackButton;
