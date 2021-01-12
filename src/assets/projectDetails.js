@@ -23,7 +23,7 @@ export default [
   },
   {
     summary:
-      "DoneWithIt is a project simiar to the app OfferUp. It was Built by me using React-Native.",
+      "DoneWithIt is a project similar to the app OfferUp. It was built by me using React-Native. To view the app on your phone, you must have Expo installed. Click on Visit Site and then scan the QR code with your phone. Log in using the mock Account: isaachouseholder@gmail.com Password: password.",
     tech: "React Native, Expo, Formik",
     webUrl:
       "https://expo.io/@isaacvon/projects/DoneWithIt?release-channel=staging",
