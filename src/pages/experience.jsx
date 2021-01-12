@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import textBackground from "../assets/swirlBackground2.png";
 import { device } from "../utils/device";
-import colors from "../config/colors"
+import colors from "../config/colors";
 import cht from "../assets/companyImages/cht.png";
 import karma from "../assets/companyImages/karma.png";
 import bourns from "../assets/companyImages/bourns.png";
