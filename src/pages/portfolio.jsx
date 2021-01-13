@@ -61,7 +61,7 @@ const Section = styled.h1`
   margin-top: 70px;
 `;
 
-export default function Portfolio() {
+export default function Portfolio({ closeNav }) {
   const [showDetails, setShowDetails] = useState(false);
   const [detailSrc, setdetailSrc] = useState();
   const [projectText, setProjectText] = useState();
@@ -74,6 +74,8 @@ export default function Portfolio() {
   ] = projectDetails;
 
   const handleClick = (project) => {
+    console.log("clicked..")
+    closeNav()
     setShowDetails(true);
 
     if (project === "hawaiiLavaZones") {

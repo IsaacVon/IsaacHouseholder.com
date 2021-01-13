@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import colors from "../config/colors"
+import colors from "../config/colors";
 import profile from "../assets/profile.png";
 import burgerSolid from "../assets/buttons/burgerSolid.png";
 import line from "../assets/lines/line.png";
@@ -126,16 +126,9 @@ const RightWrapper = styled.section`
   justify-content: center;
 `;
 
-export default function NavBar() {
+export default function NavBar({ expandNav, toggleNav }) {
   const [windowWidth, setwindowWidth] = useState(window.innerWidth);
-  const [navExpanded, setnavExpanded] = useState(false);
-
   const mobileNavWidth = 1100;
-
-  const toggleNavDropdown = () => {
-    const newNavPosition = navExpanded ? false : true;
-    setnavExpanded(newNavPosition);
-  };
 
   const handleResize = () => {
     setwindowWidth(window.innerWidth);
@@ -149,7 +142,7 @@ export default function NavBar() {
   }, []);
 
   const renderNavDropdown = () => {
-    if (navExpanded)
+    if (expandNav)
       return (
         <NavDrawer>
           <Button>
@@ -188,7 +181,7 @@ export default function NavBar() {
         </Wrapper>
         <BurgerContainer>
           <Burger
-            onClick={toggleNavDropdown}
+            onClick={toggleNav}
             src={burgerSolid}
             alt="Burger Icon"
           />
