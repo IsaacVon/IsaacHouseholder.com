@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Home from "./pages/home";
-import Skills from "./pages/skills";
 import Education from "./pages/education";
-import Hobbies from "./pages/hobbies";
-import Objective from "./pages/objective";
-import Recommendations from "./pages/recommendations";
 import Experience from "./pages/experience";
-import Portfolio from "./pages/portfolio";
+import Hobbies from "./pages/hobbies";
+import Home from "./pages/home";
 import NavBar from "./components/navBar";
+import Objective from "./pages/objective";
+import Portfolio from "./pages/portfolio";
+import Recommendations from "./pages/recommendations";
+import Skills from "./pages/skills";
 
 import "./App.css";
 

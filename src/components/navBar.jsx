@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Transition } from "react-transition-group";
 
-import colors from "../config/colors";
-import profile from "../assets/profile.png";
 import burgerSolid from "../assets/buttons/burgerSolid.png";
+import colors from "../config/colors";
 import line from "../assets/lines/line.png";
 import line2 from "../assets/lines/line2.png";
+import profile from "../assets/profile.png";
 
 const Wrapper = styled.section`
   display: flex;
@@ -141,31 +142,33 @@ export default function NavBar({ expandNav, toggleNav }) {
     };
   }, []);
 
+
+
   const renderNavDropdown = () => {
     if (expandNav)
       return (
-        <NavDrawer>
-          <Button>
-            <Link to="/portfolio">Portfolio</Link>
-          </Button>
-          <Button>
-            <Link to="/experience">Experience</Link>
-          </Button>
+          <NavDrawer>
+            <Button>
+              <Link to="/portfolio">Portfolio</Link>
+            </Button>
+            <Button>
+              <Link to="/experience">Experience</Link>
+            </Button>
 
-          <Button>
-            <Link to="/skills">Skills</Link>
-          </Button>
-          <Button>
-            <Link to="/education">Education</Link>
-          </Button>
-          <Button>
-            <Link to="/recommendations">Recommendations</Link>
-          </Button>
-          <Button>
-            <Link to="/hobbies">Hobbies</Link>
-          </Button>
-          <LineBottomNav src={line} alt="line" />
-        </NavDrawer>
+            <Button>
+              <Link to="/skills">Skills</Link>
+            </Button>
+            <Button>
+              <Link to="/education">Education</Link>
+            </Button>
+            <Button>
+              <Link to="/recommendations">Recommendations</Link>
+            </Button>
+            <Button>
+              <Link to="/hobbies">Hobbies</Link>
+            </Button>
+            <LineBottomNav src={line} alt="line" />
+          </NavDrawer>
       );
   };
 
@@ -180,11 +183,7 @@ export default function NavBar({ expandNav, toggleNav }) {
           </CenterContainer>
         </Wrapper>
         <BurgerContainer>
-          <Burger
-            onClick={toggleNav}
-            src={burgerSolid}
-            alt="Burger Icon"
-          />
+          <Burger onClick={toggleNav} src={burgerSolid} alt="Burger Icon" />
         </BurgerContainer>
         {renderNavDropdown()}
       </>
