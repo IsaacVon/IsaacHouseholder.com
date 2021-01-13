@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Transition } from "react-transition-group";
 
 import burgerSolid from "../assets/buttons/burgerSolid.png";
 import colors from "../config/colors";
