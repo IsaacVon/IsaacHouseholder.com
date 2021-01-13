@@ -74,7 +74,6 @@ export default function Portfolio({ closeNav }) {
   ] = projectDetails;
 
   const handleClick = (project) => {
-    console.log("clicked..")
     closeNav()
     setShowDetails(true);
 

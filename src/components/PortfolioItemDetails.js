@@ -92,11 +92,6 @@ const ProjectLogo = styled.img`
 function PortfolioItemDetails({ projectText, src, setShowDetails }) {
   const { summary, tech, webUrl, gitHubUrl } = projectText;
 
-  console.log("summary: ", summary);
-  console.log("tech: ", tech);
-  console.log("webUrl: ", webUrl);
-  console.log("gitHubUrl: ", gitHubUrl);
-
   return (
     <Wrapper>
       <Outline>
