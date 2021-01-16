@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import colors from "../config/colors";
 import projectDetails from "../assets/projectDetails";
-import whatGrows from "../assets/portfolioIcons/whatgrows.svg";
-import chungAndAssociates from "../assets/portfolioIcons/chung.svg";
+import whatGrows from "../assets/portfolioIcons/whatgrows.png";
+import chungAndAssociates from "../assets/portfolioIcons/chung.png";
 import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZonesText.png";
 import doneWithIt from "../assets/portfolioIcons/doneWithIt.png";
 import textBackground from "../assets/swirlBackground2.png";
