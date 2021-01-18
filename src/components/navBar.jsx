@@ -54,10 +54,12 @@ const RightContainer = styled.section`
 
 const ProfileImage = styled.img`
   width: 104px;
+  height: 104px;
 `;
 
 const Burger = styled.img`
   width: 55px;
+  height: 55px;
 `;
 
 const LineTop = styled.img`
@@ -141,33 +143,31 @@ export default function NavBar({ expandNav, toggleNav }) {
     };
   }, []);
 
-
-
   const renderNavDropdown = () => {
     if (expandNav)
       return (
-          <NavDrawer>
-            <Button>
-              <Link to="/portfolio">Portfolio</Link>
-            </Button>
-            <Button>
-              <Link to="/experience">Experience</Link>
-            </Button>
+        <NavDrawer>
+          <Button>
+            <Link to="/portfolio">Portfolio</Link>
+          </Button>
+          <Button>
+            <Link to="/experience">Experience</Link>
+          </Button>
 
-            <Button>
-              <Link to="/skills">Skills</Link>
-            </Button>
-            <Button>
-              <Link to="/education">Education</Link>
-            </Button>
-            <Button>
-              <Link to="/recommendations">Recommendations</Link>
-            </Button>
-            <Button>
-              <Link to="/hobbies">Hobbies</Link>
-            </Button>
-            <LineBottomNav src={line} alt="line" />
-          </NavDrawer>
+          <Button>
+            <Link to="/skills">Skills</Link>
+          </Button>
+          <Button>
+            <Link to="/education">Education</Link>
+          </Button>
+          <Button>
+            <Link to="/recommendations">Recommendations</Link>
+          </Button>
+          <Button>
+            <Link to="/hobbies">Hobbies</Link>
+          </Button>
+          <LineBottomNav src={line} alt="line" />
+        </NavDrawer>
       );
   };
 
