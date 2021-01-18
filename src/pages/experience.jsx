@@ -1,13 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-import textBackground from "../assets/swirlBackground2.png";
 import { device } from "../utils/device";
 import colors from "../config/colors";
-import cht from "../assets/companyImages/cht.png";
-import karma from "../assets/companyImages/karma.png";
-import bourns from "../assets/companyImages/bourns.png";
-import dougans from "../assets/companyImages/dougans.png";
+
+import textBackground from "../assets/swirlBackground2.png";
+import chtSmall from "../assets/companyImages/cht_small.png";
+import chtMedium from "../assets/companyImages/cht_medium.png";
+import karmaSmall from "../assets/companyImages/karma_small.png";
+import karmaMedium from "../assets/companyImages/karma_medium.png";
+import bournsSmall from "../assets/companyImages/bourns_small.png";
+import bournsMedium from "../assets/companyImages/bourns_medium.png";
+import dougansSmall from "../assets/companyImages/dougans_small.png";
+import dougansMedium from "../assets/companyImages/dougans_medium.png";
+
+const ImageHeight = "300px";
+const srcSetMediumWidth = "580w";
+const srcSetSmallWidth = "30w";
 
 const Wrapper = styled.section`
   display: flex;
@@ -24,34 +33,23 @@ const JobContainer = styled.section`
   margin-top: 10px;
 `;
 
-const PhotoContainer = styled.section`
+const CompanyImage = styled.img`
   width: 100%;
-  max-height: 304px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+`;
+
+const CompanyPhotoTextWrapper = styled.section`
+  max-height: ${ImageHeight};
+  width: 100%;
   overflow: hidden;
   position: relative;
   margin-top: 50px;
 `;
-
-const ChtImage = styled.img`
-  width: 100%;
-`;
-
-const KarmaImage = styled.img`
-  /* width: 900px; */
-  width: 100%;
-`;
-
-const BournsImage = styled.img`
-  width: 100%;
-`;
-
-const DougansImage = styled.img`
-  width: 100%;
+const CompanyImageContainer = styled.section`
+  max-height: ${ImageHeight};
+  overflow: hidden;
+  @media ${device.tablet} {
+    border-radius: 20px;
+  }
 `;
 
 const Section = styled.h1`
@@ -120,10 +118,18 @@ export default function Experience() {
     <Wrapper>
       <Section>Experience</Section>
       <JobContainer>
-        <PhotoContainer>
+        <CompanyPhotoTextWrapper>
           <CompanyName>California Home Team</CompanyName>
-          <ChtImage src={cht} alt="California Home Team" />
-        </PhotoContainer>
+          <CompanyImageContainer>
+            <CompanyImage
+              srcSet={`${chtSmall + " " + srcSetSmallWidth}, ${
+                chtMedium + " " + srcSetMediumWidth
+              }`}
+              src={chtMedium}
+              alt="California Home Team"
+            />
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
         <CompanyDescription>
           California Home Team is a small real estate company that has been very
           successful in the real estate business for over 30 years. They
@@ -150,10 +156,18 @@ export default function Experience() {
 
       {/* Karma */}
       <JobContainer>
-        <PhotoContainer>
+        <CompanyPhotoTextWrapper>
           <CompanyName>Karma Automotive</CompanyName>
-          <KarmaImage src={karma} alt="Karma Automotive" />
-        </PhotoContainer>
+          <CompanyImageContainer>
+            <CompanyImage
+              srcSet={`${karmaSmall + " " + srcSetSmallWidth}, ${
+                karmaMedium + " " + srcSetMediumWidth
+              }`}
+              src={karmaMedium}
+              alt="Karma Automotive"
+            />
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
         <CompanyDescription>
           Karma is a design and manufacturer of high-class luxury hybrid cars
           designed to continually challenge the market for the sustainable
@@ -208,10 +222,18 @@ export default function Experience() {
 
       {/* Bourns */}
       <JobContainer>
-        <PhotoContainer>
+        <CompanyPhotoTextWrapper>
           <CompanyName>Bourns Electronics</CompanyName>
-          <BournsImage src={bourns} alt="bourns" />
-        </PhotoContainer>
+          <CompanyImageContainer>
+            <CompanyImage
+              srcSet={`${bournsSmall + " " + srcSetSmallWidth}, ${
+                bournsMedium + " " + srcSetMediumWidth
+              }`}
+              src={bournsMedium}
+              alt="bourns"
+            />
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
 
         <CompanyDescription>
           Bourns is an electronics company that develops, manufactures, and
@@ -242,10 +264,18 @@ export default function Experience() {
 
       {/* Dougans */}
       <JobContainer>
-        <PhotoContainer>
+        <CompanyPhotoTextWrapper>
           <CompanyName>Dougans Racing</CompanyName>
-          <DougansImage src={dougans} alt="dougans" />
-        </PhotoContainer>
+          <CompanyImageContainer>
+            <CompanyImage
+              srcSet={`${dougansSmall + " " + srcSetSmallWidth}, ${
+                dougansMedium + " " + srcSetMediumWidth
+              }`}
+              src={dougansMedium}
+              alt="dougans"
+            />
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
         <CompanyDescription>
           Dougan’s is a racing engine building business and machine shop. They
           primarily operate with trophy trucks that race in the Baja 1000

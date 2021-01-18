@@ -19,6 +19,8 @@ const LetterContainer = styled.section`
   margin: 0px 41px;
 `;
 
+
+
 const LetterBody = styled.section`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -96,7 +98,9 @@ export default function Recommendations() {
 
   const renderBobsLetter = () => {
     if (displayLetter) {
-      return <BobsLetter />;
+      return (
+          <BobsLetter />
+      );
     }
 
     if (!displayLetter) {

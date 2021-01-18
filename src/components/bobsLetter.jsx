@@ -1,11 +1,12 @@
 import React from "react";
+import styled from "styled-components";
+
 import letter from "../assets/bobsLetter.jpg";
+
+const LetterImage = styled.img`
+  width: 100%;
+`;
+
 export default function BobsLetter() {
-  return (
-    <img
-      className="bobsLetter"
-      src={letter}
-      alt="Robert A. Kruse Letter of Recommendation"
-    />
-  );
+  return <LetterImage src={letter} alt="Letter" />;
 }
