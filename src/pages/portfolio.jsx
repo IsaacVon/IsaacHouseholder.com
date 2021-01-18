@@ -63,7 +63,7 @@ const Section = styled.h1`
 
 export default function Portfolio({ closeNav }) {
   const [showDetails, setShowDetails] = useState(false);
-  const [detailSrc, setdetailSrc] = useState();
+  const [imageToDisplay, setImageToDisplay] = useState();
   const [projectText, setProjectText] = useState();
 
   const [
@@ -74,23 +74,23 @@ export default function Portfolio({ closeNav }) {
   ] = projectDetails;
 
   const handleClick = (project) => {
-    closeNav()
+    closeNav();
     setShowDetails(true);
 
     if (project === "hawaiiLavaZones") {
-      setdetailSrc(hawaiiLavaZones);
+      setImageToDisplay(hawaiiLavaZones);
       setProjectText(hawaiiLavaZonesDetails);
     }
     if (project === "chungAndAssociates") {
-      setdetailSrc(chungAndAssociates);
+      setImageToDisplay(chungAndAssociates);
       setProjectText(chungAndAssociatesDetails);
     }
     if (project === "whatGrows") {
-      setdetailSrc(whatGrows);
+      setImageToDisplay(whatGrows);
       setProjectText(whatGrowsDetails);
     }
     if (project === "doneWithIt") {
-      setdetailSrc(doneWithIt);
+      setImageToDisplay(doneWithIt);
       setProjectText(doneWithItDetails);
     }
   };
@@ -99,7 +99,7 @@ export default function Portfolio({ closeNav }) {
     <>
       {showDetails && (
         <PortfolioItemDetails
-          src={detailSrc}
+          imageToDisplay={imageToDisplay}
           projectText={projectText}
           setShowDetails={setShowDetails}
         />

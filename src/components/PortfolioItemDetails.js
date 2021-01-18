@@ -34,7 +34,7 @@ const Outline = styled.section`
   margin: 20px;
 `;
 
-const Header = styled.h1`
+const PortfolioText = styled.h2`
   background: url(${textBackground});
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -43,6 +43,7 @@ const Header = styled.h1`
   color: ${colors.black};
   font-size: 20px;
   margin: 0;
+  line-height: normal;
 `;
 
 const LinksContainer = styled.section`
@@ -62,9 +63,19 @@ const BackContainer = styled.section`
   cursor: pointer;
 `;
 
-const SectionTitle = styled.h2`
+const SectionTitle = styled.h1`
   color: ${colors.black};
-  font-size: 20px;
+  font-size: 21px;
+  margin-top: 24px;
+  font-weight: lighter;
+  line-height: normal;
+  text-align: center;
+`;
+
+const SectionSubTitle = styled.h2`
+  color: ${colors.black};
+  text-align: left;
+  font-size: 18px;
   margin-top: 40px;
   font-weight: lighter;
   line-height: normal;
@@ -72,7 +83,7 @@ const SectionTitle = styled.h2`
 
 const BodyText = styled.p`
   color: ${colors.black};
-  font-size: 11px;
+  font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
@@ -89,22 +100,23 @@ const ProjectLogo = styled.img`
   margin-top: 100px;
 `;
 
-function PortfolioItemDetails({ projectText, src, setShowDetails }) {
-  const { summary, tech, webUrl, gitHubUrl } = projectText;
+function PortfolioItemDetails({ projectText, imageToDisplay, setShowDetails }) {
+  const { title, description, tech, webUrl, gitHubUrl } = projectText;
 
   return (
     <Wrapper>
       <Outline>
         <BackContainer onClick={() => setShowDetails(false)}>
           <BackButton />
-          <Header>Portfolio</Header>
+          <PortfolioText>Portfolio</PortfolioText>
         </BackContainer>
 
-        <ProjectLogo src={src} alt="Logo" />
+        <ProjectLogo src={imageToDisplay} alt="Logo" />
         <TextContainer>
-          <SectionTitle>Summary</SectionTitle>
-          <BodyText>{summary}</BodyText>
-          <SectionTitle>Technologies</SectionTitle>
+          <SectionTitle>{title}</SectionTitle>
+          <SectionSubTitle>Description</SectionSubTitle>
+          <BodyText>{description}</BodyText>
+          <SectionSubTitle>Technologies</SectionSubTitle>
           <BodyText>{tech}</BodyText>
         </TextContainer>
         <LinksContainer>
