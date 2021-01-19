@@ -18,7 +18,7 @@ export default [
   {
     title: "What Grows",
     description:
-      "I created this site because I could not find a tool get a list of “What Grows” in your area. The user will enter a zip code and WhatGrows returns a list of plants that will grow in that zip code. There are various filters that can be applied also. Users can create accounts to add favorite plants and notes.",
+      "I created this website because I could not find a tool get a list of “What Grows” in your area. The user will enter a zip code and WhatGrows returns a list of plants that will grow in that zip code. There are various filters that can be applied also. Users can create accounts to add favorite plants and notes.",
     tech: [
       "React",
       "Javascript",

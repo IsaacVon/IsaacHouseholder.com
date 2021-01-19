@@ -60,7 +60,7 @@ export default function Skills() {
       <SkillContainer>
         <li>React.js, React-Native, JSX, Javascript ES6</li>
         <li>AJAX, JSON, APIs, GraphQL</li>
-        <li>Node, Google Cloud, Express</li>
+        <li>Node, Google Cloud Platform, Express</li>
         <li>MongoDB, MySQL, JWT</li>
         <li>Git, Github, NPM</li>
         <li>CSS, HTML, Styled-Components, Material UI</li>
