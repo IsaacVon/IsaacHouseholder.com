@@ -107,7 +107,6 @@ export default function Portfolio({ closeNav }) {
       )}
       {!showDetails && (
         <>
-          <TechIcon iconName="all" />
           <Section>Portfolio</Section>
           <IconContainer>
             <Container>
