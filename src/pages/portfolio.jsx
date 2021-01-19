@@ -9,7 +9,6 @@ import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZonesText.png";
 import doneWithIt from "../assets/portfolioIcons/doneWithIt.png";
 import textBackground from "../assets/swirlBackground2.png";
 import PortfolioItemDetails from "../components/PortfolioItemDetails";
-import TechIcon from "../components/techIcon";
 
 const IconContainer = styled.section`
   display: flex;
