@@ -7,6 +7,7 @@ import textBackground from "../assets/swirlBackground2.png";
 import Button from "./Button";
 import IconLink from "./IconLink";
 import BackButton from "./BackButton";
+import TechIcon from "./techIcon";
 
 const Wrapper = styled.section`
   display: flex;
@@ -103,6 +104,8 @@ const ProjectLogo = styled.img`
 function PortfolioItemDetails({ projectText, imageToDisplay, setShowDetails }) {
   const { title, description, tech, webUrl, gitHubUrl } = projectText;
 
+
+
   return (
     <Wrapper>
       <Outline>
@@ -110,14 +113,15 @@ function PortfolioItemDetails({ projectText, imageToDisplay, setShowDetails }) {
           <BackButton />
           <PortfolioText>Portfolio</PortfolioText>
         </BackContainer>
-
         <ProjectLogo src={imageToDisplay} alt="Logo" />
         <TextContainer>
           <SectionTitle>{title}</SectionTitle>
           <SectionSubTitle>Description</SectionSubTitle>
           <BodyText>{description}</BodyText>
           <SectionSubTitle>Technologies</SectionSubTitle>
-          <BodyText>{tech}</BodyText>
+          {tech.map((iconName) => (
+            <TechIcon iconName={iconName} />
+          ))}
         </TextContainer>
         <LinksContainer>
           <IconLink url={gitHubUrl} img={gitHub} alt="github" size="31px" />

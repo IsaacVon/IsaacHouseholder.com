@@ -1,0 +1,16 @@
+export { default as api } from "./api.png";
+export { default as axios } from "./axios.png";
+export { default as expo } from "./expo.png";
+export { default as express } from "./express.png";
+export { default as formik } from "./formik.png";
+export { default as googleMaps } from "./googleMaps.png";
+export { default as javascript } from "./javascript.png";
+export { default as jwt } from "./jwt.png";
+export { default as materialui } from "./materialui.png";
+export { default as mongodb } from "./mongodb.png";
+export { default as mongoose } from "./mongoose.png";
+export { default as node } from "./node.png";
+export { default as react } from "./react.png";
+export { default as reactNative } from "./reactNative.png";
+export { default as styledComponents } from "./styledComponents.png";
+export { default as gcp } from "./gcp.png";

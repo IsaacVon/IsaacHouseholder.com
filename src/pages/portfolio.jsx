@@ -9,6 +9,7 @@ import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZonesText.png";
 import doneWithIt from "../assets/portfolioIcons/doneWithIt.png";
 import textBackground from "../assets/swirlBackground2.png";
 import PortfolioItemDetails from "../components/PortfolioItemDetails";
+import TechIcon from "../components/techIcon";
 
 const IconContainer = styled.section`
   display: flex;
@@ -106,8 +107,16 @@ export default function Portfolio({ closeNav }) {
       )}
       {!showDetails && (
         <>
+          <TechIcon iconName="all" />
           <Section>Portfolio</Section>
           <IconContainer>
+            <Container>
+              <WhatGrows
+                onClick={() => handleClick("whatGrows")}
+                src={whatGrows}
+                alt="What Grows"
+              />
+            </Container>
             <Container>
               <HawaiiLavaZones
                 onClick={() => handleClick("hawaiiLavaZones")}
@@ -116,24 +125,17 @@ export default function Portfolio({ closeNav }) {
               />
             </Container>
             <Container>
-              <ChungAndAssociates
-                onClick={() => handleClick("chungAndAssociates")}
-                src={chungAndAssociates}
-                alt="Chung And Associates"
-              />
-            </Container>
-            <Container>
-              <WhatGrows
-                onClick={() => handleClick("whatGrows")}
-                src={whatGrows}
-                alt="What Grows"
-              />
-            </Container>{" "}
-            <Container>
               <DoneWithIt
                 onClick={() => handleClick("doneWithIt")}
                 src={doneWithIt}
                 alt="DoneWithIt"
+              />
+            </Container>
+            <Container>
+              <ChungAndAssociates
+                onClick={() => handleClick("chungAndAssociates")}
+                src={chungAndAssociates}
+                alt="Chung And Associates"
               />
             </Container>
           </IconContainer>
