@@ -89,6 +89,7 @@ const JobTitle = styled.h3`
   font-size: 18px;
   text-align: center;
   margin: 50px 20px 0px 20px;
+  cursor: default;
 `;
 
 const CompanyDescription = styled.h3`
