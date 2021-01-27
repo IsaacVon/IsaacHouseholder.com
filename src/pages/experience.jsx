@@ -134,14 +134,12 @@ export default function Experience() {
         <CompanyDescription>
           California Home Team is a small real estate company that has been very
           successful in the real estate business for over 30 years. They
-          specialize in orange county residential homes.{" "}
+          specialize in orange county homes.{" "}
         </CompanyDescription>
-        <JobTitle>Real Estate Consultant (2019-2020)</JobTitle>
+        <JobTitle>Real Estate Consultant (2019 - Current)</JobTitle>
         <JobDetails>
-          <li>
-            Working with investors on investment properties and researching the
-            appropriate statistics.
-          </li>
+          <li>Work with investors to purchase investment properties.</li>
+          <li>Created HawaiiLavaZones.com for online lead generation.</li>
           <li>Purchase Contract negotiation.</li>
           <li>Online Advertising.</li>
           <li>Holding open houses and advertising for the event.</li>
@@ -179,14 +177,14 @@ export default function Experience() {
         </JobTitle>
         <JobDetails>
           <li>
+            Managed multiple projects with cross-functional design engineering
+            teams and managers to ensure the vehicle meets critical targets.{" "}
+          </li>
+          <li>
             Correlated between marketing, senior management, and design studio,
             accessing the feasibility of producing features against customer
             requirements and exceeding those expectations where viable based on
             cost and manufacturability.
-          </li>
-          <li>
-            Managed multiple projects with cross-functional design engineering
-            teams and managers to ensure the vehicle meets critical targets.{" "}
           </li>
           <li>
             Responsible for overseeing an average of 15 projects simultaneously,
@@ -194,7 +192,7 @@ export default function Experience() {
           </li>
         </JobDetails>
 
-        <JobTitle>Test Engineer (2016 – 2019)</JobTitle>
+        <JobTitle>Lead Test Engineer (2016 – 2019)</JobTitle>
         <JobDetails>
           <li>
             Successfully started up and operated a fastener and material test
