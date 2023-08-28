@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import gitHub from "../assets/socialLinks/gitHub.png";
-import gmail from "../assets/socialLinks/gmail.png";
-import linkedIn from "../assets/socialLinks/linkedIn.png";
-import textBackground from "../assets/swirlBackground2.png";
-import colors from "../config/colors";
-import styled from "styled-components";
-import IconLink from "../components/IconLink";
+import gitHub from '../assets/socialLinks/gitHub.png';
+import gmail from '../assets/socialLinks/gmail.png';
+import linkedIn from '../assets/socialLinks/linkedIn.png';
+import textBackground from '../assets/swirlBackground2.png';
+import colors from '../config/colors';
+import styled from 'styled-components';
+import IconLink from '../components/IconLink';
 
 const Wrapper = styled.section`
   display: flex;
@@ -48,7 +48,7 @@ const SocialLinkContainer = styled.section`
 export default function Home() {
   return (
     <Wrapper>
-      <Section>Isaac Householder</Section>
+      <Section>Isaac Householder TEST</Section>
       <ContactInfo>
         <li>Irvine, California</li>
         <li>IsaacHouseholder@gmail.com</li>
@@ -57,22 +57,22 @@ export default function Home() {
 
       <SocialLinkContainer>
         <IconLink
-          url="https://github.com/IsaacVon"
+          url='https://github.com/IsaacVon'
           img={gitHub}
-          alt="github"
-          size="34px"
+          alt='github'
+          size='34px'
         />
         <IconLink
-          url="mailto:isaachouseholder@gmail.com"
+          url='mailto:isaachouseholder@gmail.com'
           img={gmail}
-          alt="gmail"
-          size="34px"
+          alt='gmail'
+          size='34px'
         />
         <IconLink
-          url="https://www.linkedin.com/in/isaachouseholder/"
+          url='https://www.linkedin.com/in/isaachouseholder/'
           img={linkedIn}
-          alt="linkedIn"
-          size="34px"
+          alt='linkedIn'
+          size='34px'
         />
       </SocialLinkContainer>
     </Wrapper>
