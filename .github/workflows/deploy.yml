@@ -29,5 +29,5 @@ jobs:
           server: ftp.isaachouseholder.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /home4/whatgows/isaachouseholder.com/
+          server-dir: /
           local-dir: build/
