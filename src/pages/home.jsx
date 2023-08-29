@@ -48,7 +48,7 @@ const SocialLinkContainer = styled.section`
 export default function Home() {
   return (
     <Wrapper>
-      <Section>Isaac Householder TEST</Section>
+      <Section>Isaac Householder</Section>
       <ContactInfo>
         <li>Irvine, California</li>
         <li>IsaacHouseholder@gmail.com</li>
