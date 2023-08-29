@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-import burgerSolid from "../assets/buttons/burgerSolid.png";
-import colors from "../config/colors";
-import line from "../assets/lines/line.png";
-import line2 from "../assets/lines/line2.png";
-import profile from "../assets/profile.png";
+import burgerSolid from '../assets/buttons/burgerSolid.png';
+import colors from '../config/colors';
+import line from '../assets/lines/line.png';
+import line2 from '../assets/lines/line2.png';
+import profile from '../assets/profile.png';
 
 const Wrapper = styled.section`
   display: flex;
@@ -98,7 +98,7 @@ const Button = styled.button`
   margin: 1em 0px;
   border: 0px;
   border-radius: 30px;
-  font-family: "comfortaa";
+  font-family: 'comfortaa';
 
   &:hover {
     transition: background-color 0.2s ease-in-out;
@@ -137,9 +137,9 @@ export default function NavBar({ expandNav, toggleNav }) {
   };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -148,25 +148,25 @@ export default function NavBar({ expandNav, toggleNav }) {
       return (
         <NavDrawer>
           <Button>
-            <Link to="/portfolio">Portfolio</Link>
+            <Link to='/portfolio'>Portfolio</Link>
           </Button>
           <Button>
-            <Link to="/experience">Experience</Link>
+            <Link to='/experience'>Experience</Link>
           </Button>
 
           <Button>
-            <Link to="/skills">Skills</Link>
+            <Link to='/skills'>Skills</Link>
           </Button>
           <Button>
-            <Link to="/education">Education</Link>
+            <Link to='/education'>Education</Link>
           </Button>
           <Button>
-            <Link to="/recommendations">Recommendations</Link>
+            <Link to='/recommendations'>Recommendations</Link>
           </Button>
           <Button>
-            <Link to="/hobbies">Hobbies</Link>
+            <Link to='/hobbies'>Hobbies</Link>
           </Button>
-          <LineBottomNav src={line} alt="line" />
+          <LineBottomNav src={line} alt='line' />
         </NavDrawer>
       );
   };
@@ -176,13 +176,13 @@ export default function NavBar({ expandNav, toggleNav }) {
       <>
         <Wrapper>
           <CenterContainer>
-            <Link to="/">
-              <ProfileImage src={profile} alt="Isaac Image" />
+            <Link to='/'>
+              <ProfileImage src={profile} alt='Isaac Image' />
             </Link>
           </CenterContainer>
         </Wrapper>
         <BurgerContainer>
-          <Burger onClick={toggleNav} src={burgerSolid} alt="Burger Icon" />
+          <Burger onClick={toggleNav} src={burgerSolid} alt='Burger Icon' />
         </BurgerContainer>
         {renderNavDropdown()}
       </>
@@ -192,43 +192,43 @@ export default function NavBar({ expandNav, toggleNav }) {
     return (
       <Wrapper>
         <LeftWrapper>
-          <LineTop src={line2} alt="line" />
+          <LineTop src={line2} alt='line' />
 
           <LeftContainer>
             <Button>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to='/portfolio'>Portfolio</Link>
             </Button>
             <Button>
-              <Link to="/experience">Experience</Link>
+              <Link to='/experience'>Experience</Link>
             </Button>
 
             <Button>
-              <Link to="/skills">Skills</Link>
+              <Link to='/skills'>Skills</Link>
             </Button>
           </LeftContainer>
-          <LineBottom src={line} alt="line" />
+          <LineBottom src={line} alt='line' />
         </LeftWrapper>
 
         <CenterContainer>
-          <Link to="/">
-            <ProfileImage src={profile} alt="Isaac Image" />
+          <Link to='/'>
+            <ProfileImage src={profile} alt='Isaac Image' />
           </Link>
         </CenterContainer>
 
         <RightWrapper>
-          <LineTop src={line2} alt="line" />
+          <LineTop src={line2} alt='line' />
           <RightContainer>
             <Button>
-              <Link to="/education">Education</Link>
+              <Link to='/education'>Education</Link>
             </Button>
             <Button>
-              <Link to="/recommendations">Recommendations</Link>
+              <Link to='/recommendations'>Recommendations</Link>
             </Button>
             <Button>
-              <Link to="/hobbies">Hobbies</Link>
+              <Link to='/hobbies'>Hobbies</Link>
             </Button>
           </RightContainer>
-          <LineBottom src={line} alt="line" />
+          <LineBottom src={line} alt='line' />
         </RightWrapper>
       </Wrapper>
     );

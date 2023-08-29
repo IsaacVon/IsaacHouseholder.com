@@ -1,22 +1,22 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { device } from "../utils/device";
-import colors from "../config/colors";
+import { device } from '../utils/device';
+import colors from '../config/colors';
 
-import textBackground from "../assets/swirlBackground2.png";
-import chtSmall from "../assets/companyImages/cht_small.png";
-import chtMedium from "../assets/companyImages/cht_medium.png";
-import karmaSmall from "../assets/companyImages/karma_small.png";
-import karmaMedium from "../assets/companyImages/karma_medium.png";
-import bournsSmall from "../assets/companyImages/bourns_small.png";
-import bournsMedium from "../assets/companyImages/bourns_medium.png";
-import dougansSmall from "../assets/companyImages/dougans_small.png";
-import dougansMedium from "../assets/companyImages/dougans_medium.png";
+import textBackground from '../assets/swirlBackground2.png';
+import chtSmall from '../assets/companyImages/cht_small.png';
+import chtMedium from '../assets/companyImages/cht_medium.png';
+import karmaSmall from '../assets/companyImages/karma_small.png';
+import karmaMedium from '../assets/companyImages/karma_medium.png';
+import bournsSmall from '../assets/companyImages/bourns_small.png';
+import bournsMedium from '../assets/companyImages/bourns_medium.png';
+import dougansSmall from '../assets/companyImages/dougans_small.png';
+import dougansMedium from '../assets/companyImages/dougans_medium.png';
 
-const ImageHeight = "300px";
-const srcSetMediumWidth = "580w";
-const srcSetSmallWidth = "30w";
+const ImageHeight = '300px';
+const srcSetMediumWidth = '580w';
+const srcSetSmallWidth = '30w';
 
 const Wrapper = styled.section`
   display: flex;
@@ -93,8 +93,8 @@ const JobTitle = styled.h3`
 `;
 
 const CompanyDescription = styled.h3`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 580px;
   font-weight: 300;
   font-size: 12px;
@@ -104,8 +104,8 @@ const CompanyDescription = styled.h3`
 `;
 
 const JobDetails = styled.ul`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-inline-start: 15px;
   font-weight: 300;
   font-size: 16px;
@@ -120,21 +120,96 @@ export default function Experience() {
       <Section>Experience</Section>
       <JobContainer>
         <CompanyPhotoTextWrapper>
+          <CompanyName>Ai Interactions</CompanyName>
+          <CompanyImageContainer>
+            {/* Add your Ai Interactions logo here */}
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
+        <CompanyDescription>
+          Production-grade ai powered customer service solutions using OpenAI's
+          APIs. Servers that cater to custom Knowledge bases for Language models
+          like GPT-4. Hosted on AWS.
+        </CompanyDescription>
+        <JobTitle>Founder (Jun 2023 - Present)</JobTitle>
+        <JobDetails>
+          <li>
+            Production-grade ai powered customer service solutions using
+            OpenAI's APIs.
+          </li>
+          <li>
+            Servers that cater to custom Knowledge bases for Language models
+            like GPT-4. Hosted on AWS.
+          </li>
+        </JobDetails>
+      </JobContainer>
+      <JobContainer>
+        <CompanyPhotoTextWrapper>
+          <CompanyName>Own Up</CompanyName>
+          <CompanyImageContainer>
+            {/* Add your Own Up logo here */}
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
+        <CompanyDescription>
+          Worked on a full-stack team with a modern tech stack. Made over 450
+          contributions to various software development projects.
+        </CompanyDescription>
+        <JobTitle>Software Engineer (Jun 2022 - May 2023)</JobTitle>
+        <JobDetails>
+          <li>Worked on a full-stack team with a modern tech stack.</li>
+          <li>
+            Made over 450 contributions to various software development
+            projects.
+          </li>
+          <li>Integrated GitHub Actions and Playwright testing with AWS.</li>
+        </JobDetails>
+      </JobContainer>
+      <JobContainer>
+        <CompanyPhotoTextWrapper>
+          <CompanyName>Better</CompanyName>
+          <CompanyImageContainer>
+            {/* Add your Better logo here */}
+          </CompanyImageContainer>
+        </CompanyPhotoTextWrapper>
+        <CompanyDescription>
+          Acted as one of the primary engineering contacts for a 15+ member
+          product support team.
+        </CompanyDescription>
+        <JobTitle>
+          Product Technical Support Engineer (Apr 2021 - May 2022)
+        </JobTitle>
+        <JobDetails>
+          <li>
+            Acted as one of the primary engineering contacts for a 15+ member
+            product support team.
+          </li>
+          <li>
+            Collaborated to implement new workflows for routing incoming product
+            support tickets.
+          </li>
+          <li>
+            Worked cross-functionally to resolve issues and improve internal
+            efficiency.
+          </li>
+        </JobDetails>
+      </JobContainer>
+
+      <JobContainer>
+        <CompanyPhotoTextWrapper>
           <CompanyName>California Home Team</CompanyName>
           <CompanyImageContainer>
             <CompanyImage
-              srcSet={`${chtSmall + " " + srcSetSmallWidth}, ${
-                chtMedium + " " + srcSetMediumWidth
+              srcSet={`${chtSmall + ' ' + srcSetSmallWidth}, ${
+                chtMedium + ' ' + srcSetMediumWidth
               }`}
               src={chtMedium}
-              alt="California Home Team"
+              alt='California Home Team'
             />
           </CompanyImageContainer>
         </CompanyPhotoTextWrapper>
         <CompanyDescription>
           California Home Team is a small real estate company that has been very
           successful in the real estate business for over 30 years. They
-          specialize in orange county homes.{" "}
+          specialize in orange county homes.{' '}
         </CompanyDescription>
         <JobTitle>Real Estate Consultant (2019 - Current)</JobTitle>
         <JobDetails>
@@ -159,11 +234,11 @@ export default function Experience() {
           <CompanyName>Karma Automotive</CompanyName>
           <CompanyImageContainer>
             <CompanyImage
-              srcSet={`${karmaSmall + " " + srcSetSmallWidth}, ${
-                karmaMedium + " " + srcSetMediumWidth
+              srcSet={`${karmaSmall + ' ' + srcSetSmallWidth}, ${
+                karmaMedium + ' ' + srcSetMediumWidth
               }`}
               src={karmaMedium}
-              alt="Karma Automotive"
+              alt='Karma Automotive'
             />
           </CompanyImageContainer>
         </CompanyPhotoTextWrapper>
@@ -178,7 +253,7 @@ export default function Experience() {
         <JobDetails>
           <li>
             Managed multiple projects with cross-functional design engineering
-            teams and managers to ensure the vehicle meets critical targets.{" "}
+            teams and managers to ensure the vehicle meets critical targets.{' '}
           </li>
           <li>
             Correlated between marketing, senior management, and design studio,
@@ -225,11 +300,11 @@ export default function Experience() {
           <CompanyName>Bourns Electronics</CompanyName>
           <CompanyImageContainer>
             <CompanyImage
-              srcSet={`${bournsSmall + " " + srcSetSmallWidth}, ${
-                bournsMedium + " " + srcSetMediumWidth
+              srcSet={`${bournsSmall + ' ' + srcSetSmallWidth}, ${
+                bournsMedium + ' ' + srcSetMediumWidth
               }`}
               src={bournsMedium}
-              alt="bourns"
+              alt='bourns'
             />
           </CompanyImageContainer>
         </CompanyPhotoTextWrapper>
@@ -244,7 +319,7 @@ export default function Experience() {
         <JobDetails>
           <li>
             Programmed an Arduino to process multiple analog inputs to output a
-            stable and consistent digital reading.{" "}
+            stable and consistent digital reading.{' '}
           </li>
           <li>
             Designed using Autodesk Inventor, 3D printed, and tested air
@@ -253,7 +328,7 @@ export default function Experience() {
           </li>
           <li>
             Assisted in the design of a CNC soldering machine, which was
-            implemented into the production process.{" "}
+            implemented into the production process.{' '}
           </li>
           <li>
             Gained an understanding of electronics at the component level.
@@ -267,11 +342,11 @@ export default function Experience() {
           <CompanyName>Dougans Racing</CompanyName>
           <CompanyImageContainer>
             <CompanyImage
-              srcSet={`${dougansSmall + " " + srcSetSmallWidth}, ${
-                dougansMedium + " " + srcSetMediumWidth
+              srcSet={`${dougansSmall + ' ' + srcSetSmallWidth}, ${
+                dougansMedium + ' ' + srcSetMediumWidth
               }`}
               src={dougansMedium}
-              alt="dougans"
+              alt='dougans'
             />
           </CompanyImageContainer>
         </CompanyPhotoTextWrapper>
