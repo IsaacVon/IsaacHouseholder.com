@@ -9,6 +9,10 @@ body {
   font-family: 'Comfortaa';
   color: #2c2d52;
   text-align: justify;
+  overflow-y: scroll;
+}
+body {
+  margin-right: calc(100vw - 100%);
 }
 
 h1 {
