@@ -38,12 +38,6 @@ const CompanyImage = styled.img`
   border-radius: 4px;
 `;
 
-const TextWrapper = styled.section`
-  width: 100%;
-  position: relative;
-  margin-top: 3rem;
-`;
-
 const CompanyName = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
