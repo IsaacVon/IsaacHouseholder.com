@@ -12,18 +12,18 @@ import aiInteractionsMedium from '../../assets/companyImages/aiInteractions_medi
 
 const jobs = [
   {
-    companyName: 'Ai Interactions',
+    companyName: 'AI Interactions',
     image: {
       small: aiInteractionsMedium,
       medium: aiInteractionsMedium,
     }, // Add your Ai Interactions logo URL here
     titleBackgroundColor: '#acb5ac9e',
     description:
-      "Production-grade ai powered customer service solutions using OpenAI's APIs. Servers that cater to custom Knowledge bases for Language models like GPT-4. Hosted on AWS.",
+      "Production-grade AI powered customer service solutions using OpenAI's APIs. Servers that cater to custom Knowledge bases for Language models like GPT-4. Hosted on AWS.",
     title: 'Founder (Jun 2023 - Present)',
     overlayColor: 'white',
     details: [
-      "Production-grade ai powered customer service solutions using OpenAI's APIs.",
+      "Production-grade AI powered customer service solutions using OpenAI's APIs.",
       'Servers that cater to custom Knowledge bases for Language models like GPT-4. Hosted on AWS.',
     ],
   },
