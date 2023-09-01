@@ -164,23 +164,35 @@ export default function NavBar({ expandNav, toggleNav }) {
       return (
         <NavDrawer>
           <Button>
-            <Link to='/portfolio'>Portfolio</Link>
+            <Link to='/portfolio' onClick={toggleNav}>
+              Portfolio
+            </Link>
           </Button>
           <Button>
-            <Link to='/experience'>Experience</Link>
+            <Link to='/experience' onClick={toggleNav}>
+              Experience
+            </Link>
           </Button>
 
           <Button>
-            <Link to='/skills'>Skills</Link>
+            <Link to='/skills' onClick={toggleNav}>
+              Skills
+            </Link>
           </Button>
           <Button>
-            <Link to='/education'>Education</Link>
+            <Link to='/education' onClick={toggleNav}>
+              Education
+            </Link>
           </Button>
           <Button>
-            <Link to='/recommendations'>Recommendations</Link>
+            <Link to='/recommendations' onClick={toggleNav}>
+              Recommendations
+            </Link>
           </Button>
           <Button>
-            <Link to='/hobbies'>Hobbies</Link>
+            <Link to='/hobbies' onClick={toggleNav}>
+              Hobbies
+            </Link>
           </Button>
           <LineBottomNav src={line} alt='line' />
         </NavDrawer>
