@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../config/colors';
 import SectionHeader from '../components/SectionHeader';
+import skills from '../assets/data/skills';
 
 const Wrapper = styled.section`
   display: flex;
@@ -15,7 +16,7 @@ const Wrapper = styled.section`
 
 const SkillContainer = styled.ul`
   margin: 7px 0px 6px 0px;
-  width: 213px;
+  width: 310px;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -40,37 +41,16 @@ export default function Skills() {
     <>
       <SectionHeader>Skills</SectionHeader>
       <Wrapper>
-        <SkillGenre>Front End</SkillGenre>
-        <SkillContainer>
-          <li>React, TypeScript, Storybook</li>
-          <li>JavaScript, Material UI, Styled-Components</li>
-          <li>Figma, HTML, CSS</li>
-        </SkillContainer>
-
-        <SkillGenre>Back End</SkillGenre>
-        <SkillContainer>
-          <li>Node, AWS, JWT</li>
-          <li>AWS Lambda, API integration, NPM Package</li>
-          <li>auth0, MongoDB, GraphQL</li>
-          <li>Google Cloud, Cloud Computing</li>
-          <li>SQL, NoSQL, Express, Microservices</li>
-        </SkillContainer>
-
-        <SkillGenre>Testing & CI/CD</SkillGenre>
-        <SkillContainer>
-          <li>Unit/Acceptance testing with Jest</li>
-          <li>E2E testing with Playwright, Sentry</li>
-          <li>Automated testing with GitHub Actions</li>
-          <li>Split testing with split.io, io-ts</li>
-        </SkillContainer>
-
-        <SkillGenre>Collaboration & Methodologies</SkillGenre>
-        <SkillContainer>
-          <li>Cross-functional team, Jira</li>
-          <li>Trello, code review, Agile ceremonies</li>
-          <li>Retrospective facilitation, Git</li>
-          <li>Github, SDLC best practices</li>
-        </SkillContainer>
+        {skills.map((section, index) => (
+          <div key={index}>
+            <SkillGenre>{section.skillGenre}</SkillGenre>
+            <SkillContainer>
+              {section.skillList.map((skill, i) => (
+                <li key={i}>{skill}</li>
+              ))}
+            </SkillContainer>
+          </div>
+        ))}
       </Wrapper>
     </>
   );

@@ -12,6 +12,8 @@ const Wrapper = styled.section`
 `;
 
 const SchoolName = styled.h2`
+  text-align: center;
+
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -22,6 +24,8 @@ const SchoolName = styled.h2`
 `;
 
 const DegreeType = styled.h3`
+  text-align: center;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 13px;

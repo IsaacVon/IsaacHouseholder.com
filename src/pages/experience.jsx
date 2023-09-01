@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../utils/device';
 import colors from '../config/colors';
-import jobs from '../assets/jobsArray';
+import jobs from '../assets/data/experience';
 import SectionHeader from '../components/SectionHeader';
 
 const Wrapper = styled.section`
@@ -56,15 +56,16 @@ const CompanyName = styled.div`
 `;
 
 const JobTitle = styled.h3`
-  font-size: 1.2rem;
+  font-size: 20px;
   text-align: center;
   margin: 3rem 1rem 0 1rem;
   color: ${colors.text};
+  font-weight: 600;
 `;
 
 const Description = styled.p`
   max-width: 580px;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
@@ -74,11 +75,11 @@ const Description = styled.p`
 
 const Details = styled.ul`
   padding-inline-start: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: left;
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
   color: ${colors.text};
 `;
 

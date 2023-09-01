@@ -31,7 +31,7 @@ const projects = [
       'API',
       'AXIOS',
       'JWT',
-      'StyledComponents',
+      'styledComponents',
     ],
 
     webUrl: 'https://www.whatgrows.org/',

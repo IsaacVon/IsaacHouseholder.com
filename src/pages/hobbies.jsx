@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import hobbies from '../assets/data/hobbies';
 import SectionHeader from '../components/SectionHeader';
 
 const Wrapper = styled.section`
@@ -27,11 +27,9 @@ export default function Hobbies() {
       <SectionHeader>Hobbies</SectionHeader>
       <Wrapper>
         <HobbyList>
-          <li>Hiking with family</li>
-          <li>Computers</li>
-          <li>Motorcycles</li>
-          <li>Learning</li>
-          <li>Eating</li>
+          {hobbies.map((hobby, index) => (
+            <li key={index}>{hobby}</li>
+          ))}
         </HobbyList>
       </Wrapper>
     </>

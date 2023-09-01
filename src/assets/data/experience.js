@@ -1,14 +1,14 @@
-import chtSmall from '../assets/companyImages/cht_small.png';
-import chtMedium from '../assets/companyImages/cht_medium.png';
-import karmaSmall from '../assets/companyImages/karma_small.png';
-import karmaMedium from '../assets/companyImages/karma_medium.png';
-import bournsSmall from '../assets/companyImages/bourns_small.png';
-import bournsMedium from '../assets/companyImages/bourns_medium.png';
-import dougansSmall from '../assets/companyImages/dougans_small.png';
-import dougansMedium from '../assets/companyImages/dougans_medium.png';
-import betterMedium from '../assets/companyImages/better_medium.png';
-import ownupMedium from '../assets/companyImages/ownup_medium.png';
-import aiInteractionsMedium from '../assets/companyImages/aiInteractions_medium.png';
+import chtSmall from '../../assets/companyImages/cht_small.png';
+import chtMedium from '../../assets/companyImages/cht_medium.png';
+import karmaSmall from '../../assets/companyImages/karma_small.png';
+import karmaMedium from '../../assets/companyImages/karma_medium.png';
+import bournsSmall from '../../assets/companyImages/bourns_small.png';
+import bournsMedium from '../../assets/companyImages/bourns_medium.png';
+import dougansSmall from '../../assets/companyImages/dougans_small.png';
+import dougansMedium from '../../assets/companyImages/dougans_medium.png';
+import betterMedium from '../../assets/companyImages/better_medium.png';
+import ownupMedium from '../../assets/companyImages/ownup_medium.png';
+import aiInteractionsMedium from '../../assets/companyImages/aiInteractions_medium.png';
 
 const jobs = [
   {

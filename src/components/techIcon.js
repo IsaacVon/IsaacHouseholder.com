@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 // import api from "../assets/techIcons/api.png";
 import {
@@ -19,16 +19,16 @@ import {
   reactNative,
   styledComponents,
   gcp,
-} from "../assets/techIcons/index";
+} from '../assets/techIcons/index';
 
 const baseIconSize = 30;
-const margin = "6px 10px";
+const margin = '6px 10px';
 
 const calculateSize = (sizeAdjuster) => {
-  if (!sizeAdjuster) return baseIconSize.toString().concat("px");
+  if (!sizeAdjuster) return baseIconSize.toString().concat('px');
 
   const iconSize = baseIconSize + sizeAdjuster;
-  const iconString = iconSize.toString().concat("px");
+  const iconString = iconSize.toString().concat('px');
   return iconString;
 };
 
@@ -104,7 +104,7 @@ const ReactNativeContainer = styled.img`
   overflow: hidden;
   margin: ${margin};
 `;
-const StyledComponentsContainer = styled.img`
+const styledComponentsContainer = styled.img`
   height: ${calculateSize(16)};
   overflow: hidden;
   margin: ${margin};
@@ -116,74 +116,74 @@ const GcpContainer = styled.img`
 `;
 
 function ApiIcon() {
-  return <ApiContainer src={api} alt="API" />;
+  return <ApiContainer src={api} alt='API' />;
 }
 function AxiosIcon() {
-  return <AxiosContainer src={axios} alt="Axios" />;
+  return <AxiosContainer src={axios} alt='Axios' />;
 }
 function ExpoIcon() {
-  return <ExpoContainer src={expo} alt="Expo" />;
+  return <ExpoContainer src={expo} alt='Expo' />;
 }
 function ExpressIcon() {
-  return <ExpressContainer src={express} alt="Express" />;
+  return <ExpressContainer src={express} alt='Express' />;
 }
 function FormikIcon() {
-  return <FormikContainer src={formik} alt="Formik" />;
+  return <FormikContainer src={formik} alt='Formik' />;
 }
 function GoogleMapsIcon() {
-  return <GoogleMapsContainer src={googleMaps} alt="Google Maps" />;
+  return <GoogleMapsContainer src={googleMaps} alt='Google Maps' />;
 }
 function JavascriptIcon() {
-  return <JavascriptContainer src={javascript} alt="Javascript" />;
+  return <JavascriptContainer src={javascript} alt='Javascript' />;
 }
 function JwtIcon() {
-  return <JwtContainer src={jwt} alt="JSON Web Token" />;
+  return <JwtContainer src={jwt} alt='JSON Web Token' />;
 }
 function MaterialuiIcon() {
-  return <MaterialuiContainer src={materialui} alt="Materual UI" />;
+  return <MaterialuiContainer src={materialui} alt='Materual UI' />;
 }
 function MongodbIcon() {
-  return <MongodbContainer src={mongodb} alt="MongoDB" />;
+  return <MongodbContainer src={mongodb} alt='MongoDB' />;
 }
 function MongooseIcon() {
-  return <MongooseContainer src={mongoose} alt="Mongoose" />;
+  return <MongooseContainer src={mongoose} alt='Mongoose' />;
 }
 function NodeIcon() {
-  return <NodeContainer src={node} alt="Node" />;
+  return <NodeContainer src={node} alt='Node' />;
 }
 function ReactIcon() {
-  return <ReactContainer src={react} alt="React" />;
+  return <ReactContainer src={react} alt='React' />;
 }
 function ReactNativeIcon() {
-  return <ReactNativeContainer src={reactNative} alt="React Native" />;
+  return <ReactNativeContainer src={reactNative} alt='React Native' />;
 }
-function StyledComponentsIcon() {
+function styledComponentsIcon() {
   return (
-    <StyledComponentsContainer src={styledComponents} alt="Styled Components" />
+    <styledComponentsContainer src={styledComponents} alt='Styled Components' />
   );
 }
 function GcpIcon() {
-  return <GcpContainer src={gcp} alt="Google Cloud Platform" />;
+  return <GcpContainer src={gcp} alt='Google Cloud Platform' />;
 }
 
 function TechIcon({ iconName }) {
-  if (iconName === "API") return <ApiIcon />;
-  if (iconName === "AXIOS") return <AxiosIcon />;
-  if (iconName === "Expo") return <ExpoIcon />;
-  if (iconName === "Express") return <ExpressIcon />;
-  if (iconName === "Formik") return <FormikIcon />;
-  if (iconName === "GoogleMaps") return <GoogleMapsIcon />;
-  if (iconName === "Javascript") return <JavascriptIcon />;
-  if (iconName === "JWT") return <JwtIcon />;
-  if (iconName === "MaterialUI") return <MaterialuiIcon />;
-  if (iconName === "MongoDB") return <MongodbIcon />;
-  if (iconName === "Mongoose") return <MongooseIcon />;
-  if (iconName === "Node") return <NodeIcon />;
-  if (iconName === "React") return <ReactIcon />;
-  if (iconName === "ReactNative") return <ReactNativeIcon />;
-  if (iconName === "StyledComponents") return <StyledComponentsIcon />;
-  if (iconName === "GCP") return <GcpIcon />;
-  if (iconName === "all")
+  if (iconName === 'API') return <ApiIcon />;
+  if (iconName === 'AXIOS') return <AxiosIcon />;
+  if (iconName === 'Expo') return <ExpoIcon />;
+  if (iconName === 'Express') return <ExpressIcon />;
+  if (iconName === 'Formik') return <FormikIcon />;
+  if (iconName === 'GoogleMaps') return <GoogleMapsIcon />;
+  if (iconName === 'Javascript') return <JavascriptIcon />;
+  if (iconName === 'JWT') return <JwtIcon />;
+  if (iconName === 'MaterialUI') return <MaterialuiIcon />;
+  if (iconName === 'MongoDB') return <MongodbIcon />;
+  if (iconName === 'Mongoose') return <MongooseIcon />;
+  if (iconName === 'Node') return <NodeIcon />;
+  if (iconName === 'React') return <ReactIcon />;
+  if (iconName === 'ReactNative') return <ReactNativeIcon />;
+  if (iconName === 'styledComponents') return <styledComponentsIcon />;
+  if (iconName === 'GCP') return <GcpIcon />;
+  if (iconName === 'all')
     return (
       <>
         <ApiIcon />
@@ -200,11 +200,11 @@ function TechIcon({ iconName }) {
         <NodeIcon />
         <ReactIcon />
         <ReactNativeIcon />
-        <StyledComponentsIcon />
+        <styledComponentsIcon />
         <GcpIcon />
       </>
     );
-  else return "error";
+  else return 'error';
 }
 
 export default TechIcon;
