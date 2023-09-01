@@ -93,7 +93,7 @@ export default function Portfolio({ closeNav }) {
       )}
       {!showDetails && (
         <>
-          <SectionHeader>Portfolio</SectionHeader>
+          <SectionHeader>2020 Portfolio</SectionHeader>
           <IconContainer>
             <Container>
               <WhatGrows
