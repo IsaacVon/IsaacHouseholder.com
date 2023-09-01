@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { device } from '../utils/device';
 
 import burgerSolid from '../assets/buttons/burgerSolid.png';
 import colors from '../config/colors';
 import line from '../assets/lines/line.png';
 import line2 from '../assets/lines/line2.png';
-import profile from '../assets/profile.png';
+import profile from '../assets/profile.jpeg';
 
 const Wrapper = styled.section`
+  position: relative; /* Add this */
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Change to center */
   align-items: center;
   margin: 88px 20px 20px 20px;
 `;
@@ -34,10 +36,12 @@ const CenterContainer = styled.section`
 `;
 
 const BurgerContainer = styled.section`
-  /* background-color: darkgreen; */
-  position: absolute;
-  right: 36px;
-  top: 115px;
+  position: absolute; /* Bring this back */
+  right: -7px;
+  padding-right: 7px; /* Add padding-right */
+
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
 
   &:hover {
     cursor: pointer;
@@ -51,10 +55,18 @@ const RightContainer = styled.section`
   justify-content: flex-start;
   flex-wrap: wrap;
 `;
-
 const ProfileImage = styled.img`
   width: 104px;
   height: 104px;
+  border-radius: 5px;
+  @media ${device.mobileS} {
+    width: 70px;
+    height: 70px;
+  }
+  @media ${device.tablet} {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 const Burger = styled.img`
@@ -98,7 +110,7 @@ const Button = styled.button`
   margin: 1em 0px;
   border: 0px;
   border-radius: 30px;
-  font-family: 'comfortaa';
+  font-family: 'Aktiv Grotesk', sans-serif;
 
   &:hover {
     transition: background-color 0.2s ease-in-out;
@@ -180,10 +192,10 @@ export default function NavBar({ expandNav, toggleNav }) {
               <ProfileImage src={profile} alt='Isaac Image' />
             </Link>
           </CenterContainer>
+          <BurgerContainer>
+            <Burger onClick={toggleNav} src={burgerSolid} alt='Burger Icon' />
+          </BurgerContainer>
         </Wrapper>
-        <BurgerContainer>
-          <Burger onClick={toggleNav} src={burgerSolid} alt='Burger Icon' />
-        </BurgerContainer>
         {renderNavDropdown()}
       </>
     );
