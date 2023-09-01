@@ -28,16 +28,6 @@ const DegreeType = styled.h3`
   margin-top: 10px;
 `;
 
-const ProjectDescription = styled.p`
-  margin-bottom: 50px;
-  max-width: 488px;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 19px;
-  text-align: justify;
-  margin: 0px 56px 40px 56px;
-`;
-
 export default function Education() {
   return (
     <>
