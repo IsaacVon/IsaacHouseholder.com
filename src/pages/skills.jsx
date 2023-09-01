@@ -1,23 +1,24 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import colors from "../config/colors";
-import textBackground from "../assets/swirlBackground2.png";
+import colors from '../config/colors';
+import textBackground from '../assets/swirlBackground2.png';
 
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  place-items: center;
+  align-items: flex-start; // Align text to the inside
+  max-width: 300px; // Limit maximum width
+  margin: auto; // Center the wrapper
   padding-bottom: 200px;
+  align-items: baseline;
 `;
 
 const SkillContainer = styled.ul`
   margin: 7px 0px 6px 0px;
   width: 213px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 15px;
   line-height: 30px;
   text-align: left;
@@ -35,36 +36,60 @@ const Section = styled.h1`
   font-size: 34px;
   margin-top: 50px;
   margin-bottom: 10px;
+  align-self: center;
+  font-weight: 600;
 `;
 
 const SkillGenre = styled.h2`
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 20px;
   line-height: 15px;
   margin-bottom: 0px;
+  margin-top: 31px;
   color: ${colors.black};
+`;
+
+const SkillSetWrapper = styled.div`
+  border: 1px solid #ccc; // Add border
+  padding: 15px;
+  margin-bottom: 20px;
 `;
 
 export default function Skills() {
   return (
     <Wrapper>
       <Section>Skills</Section>
-      <SkillGenre>Computer Proficiencies</SkillGenre>
+      <SkillGenre>Front End</SkillGenre>
       <SkillContainer>
-        <li>Catia, Smarteam, Solidworks</li>
-        <li>Jira, Polarion</li>
-        <li>Microsoft Office, SAP, Slack</li>
+        <li>React, TypeScript, Storybook</li>
+        <li>JavaScript, Material UI, Styled-Components</li>
+        <li>Figma, HTML, CSS</li>
       </SkillContainer>
-      <SkillGenre>Code specific Experience </SkillGenre>
+
+      <SkillGenre>Back End</SkillGenre>
       <SkillContainer>
-        <li>React.js, React-Native, JSX, Javascript ES6</li>
-        <li>AJAX, JSON, APIs, GraphQL</li>
-        <li>Node, Google Cloud Platform, Express</li>
-        <li>MongoDB, MySQL, JWT</li>
-        <li>Git, Github, NPM</li>
-        <li>CSS, HTML, Styled-Components, Material UI</li>
-        <li>Formik, Figma</li>
+        <li>Node, AWS, JWT</li>
+        <li>AWS Lambda, API integration, NPM Package</li>
+        <li>auth0, MongoDB, GraphQL</li>
+        <li>Google Cloud, Cloud Computing</li>
+        <li>SQL, NoSQL, Express, Microservices</li>
+      </SkillContainer>
+
+      <SkillGenre>Testing & CI/CD</SkillGenre>
+      <SkillContainer>
+        <li>Unit/Acceptance testing with Jest</li>
+        <li>E2E testing with Playwright, Sentry</li>
+        <li>Automated testing with GitHub Actions</li>
+        <li>Split testing with split.io, io-ts</li>
+      </SkillContainer>
+
+      <SkillGenre>Collaboration & Methodologies</SkillGenre>
+      <SkillContainer>
+        <li>Cross-functional team, Jira</li>
+        <li>Trello, code review, Agile ceremonies</li>
+        <li>Retrospective facilitation, Git</li>
+        <li>Github, SDLC best practices</li>
       </SkillContainer>
     </Wrapper>
   );
