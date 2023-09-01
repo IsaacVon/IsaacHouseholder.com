@@ -17,7 +17,6 @@ import {
   node,
   react,
   reactNative,
-  styledComponents,
   gcp,
 } from '../assets/techIcons/index';
 
@@ -104,11 +103,7 @@ const ReactNativeContainer = styled.img`
   overflow: hidden;
   margin: ${margin};
 `;
-const styledComponentsContainer = styled.img`
-  height: ${calculateSize(16)};
-  overflow: hidden;
-  margin: ${margin};
-`;
+
 const GcpContainer = styled.img`
   height: ${calculateSize(5)};
   overflow: hidden;
@@ -157,11 +152,7 @@ function ReactIcon() {
 function ReactNativeIcon() {
   return <ReactNativeContainer src={reactNative} alt='React Native' />;
 }
-function styledComponentsIcon() {
-  return (
-    <styledComponentsContainer src={styledComponents} alt='Styled Components' />
-  );
-}
+
 function GcpIcon() {
   return <GcpContainer src={gcp} alt='Google Cloud Platform' />;
 }
