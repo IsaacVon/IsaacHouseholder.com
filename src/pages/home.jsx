@@ -24,17 +24,18 @@ const Section = styled.h1`
   text-align: center;
   color: ${colors.black};
   font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 17px;
 `;
 
 const ContactInfo = styled.ul`
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   text-align: center;
   list-style-type: none;
   padding-inline-start: 0px;
-  margin-block-start: 6px;
 `;
 
 const SocialLinkContainer = styled.section`

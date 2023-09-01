@@ -14,7 +14,11 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center; /* Change to center */
   align-items: center;
-  margin: 88px 20px 20px 20px;
+  margin: 70px 20px 20px 20px;
+
+  @media ${device.mobileL} {
+    margin: 88px 20px 20px 20px;
+  }
 `;
 
 const NavDrawer = styled.section`

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import colors from "../config/colors";
+import colors from '../config/colors';
 
 const ButtonContainer = styled.section``;
 
@@ -23,7 +23,7 @@ const Outline = styled.section`
 `;
 
 const Title = styled.h3`
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 15px;
   margin: 0px;
 `;
@@ -31,7 +31,7 @@ const Title = styled.h3`
 function Button({ url, title }) {
   return (
     <ButtonContainer>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={url} target='_blank' rel='noopener noreferrer'>
         <Outline>
           <Title>{title}</Title>
         </Outline>

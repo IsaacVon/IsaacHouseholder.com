@@ -1,15 +1,13 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
-import colors from "../config/colors";
-import projectDetails from "../assets/projectDetails";
-import whatGrows from "../assets/portfolioIcons/whatgrows.png";
-import chungAndAssociates from "../assets/portfolioIcons/chung.png";
-import hawaiiLavaZones from "../assets/portfolioIcons/hawaiiLavaZonesText.png";
-import doneWithIt from "../assets/portfolioIcons/doneWithIt.png";
-import textBackground from "../assets/swirlBackground2.png";
-import PortfolioItemDetails from "../components/PortfolioItemDetails";
-
+import projectDetails from '../assets/projectDetails';
+import whatGrows from '../assets/portfolioIcons/whatgrows.png';
+import chungAndAssociates from '../assets/portfolioIcons/chung.png';
+import hawaiiLavaZones from '../assets/portfolioIcons/hawaiiLavaZonesText.png';
+import doneWithIt from '../assets/portfolioIcons/doneWithIt.png';
+import PortfolioItemDetails from '../components/PortfolioItemDetails';
+import SectionHeader from '../components/SectionHeader';
 const IconContainer = styled.section`
   display: flex;
   flex-wrap: wrap;
@@ -50,17 +48,6 @@ const DoneWithIt = styled.img`
   cursor: pointer;
 `;
 
-const Section = styled.h1`
-  background: url(${textBackground});
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-align: center;
-  color: ${colors.black};
-  font-size: 34px;
-  margin-top: 70px;
-`;
-
 export default function Portfolio({ closeNav }) {
   const [showDetails, setShowDetails] = useState(false);
   const [imageToDisplay, setImageToDisplay] = useState();
@@ -77,19 +64,19 @@ export default function Portfolio({ closeNav }) {
     closeNav();
     setShowDetails(true);
 
-    if (project === "hawaiiLavaZones") {
+    if (project === 'hawaiiLavaZones') {
       setImageToDisplay(hawaiiLavaZones);
       setProjectText(hawaiiLavaZonesDetails);
     }
-    if (project === "chungAndAssociates") {
+    if (project === 'chungAndAssociates') {
       setImageToDisplay(chungAndAssociates);
       setProjectText(chungAndAssociatesDetails);
     }
-    if (project === "whatGrows") {
+    if (project === 'whatGrows') {
       setImageToDisplay(whatGrows);
       setProjectText(whatGrowsDetails);
     }
-    if (project === "doneWithIt") {
+    if (project === 'doneWithIt') {
       setImageToDisplay(doneWithIt);
       setProjectText(doneWithItDetails);
     }
@@ -106,34 +93,34 @@ export default function Portfolio({ closeNav }) {
       )}
       {!showDetails && (
         <>
-          <Section>Portfolio</Section>
+          <SectionHeader>Portfolio</SectionHeader>
           <IconContainer>
             <Container>
               <WhatGrows
-                onClick={() => handleClick("whatGrows")}
+                onClick={() => handleClick('whatGrows')}
                 src={whatGrows}
-                alt="What Grows"
+                alt='What Grows'
               />
             </Container>
             <Container>
               <HawaiiLavaZones
-                onClick={() => handleClick("hawaiiLavaZones")}
+                onClick={() => handleClick('hawaiiLavaZones')}
                 src={hawaiiLavaZones}
-                alt="Hawaii Lava Zones"
+                alt='Hawaii Lava Zones'
               />
             </Container>
             <Container>
               <DoneWithIt
-                onClick={() => handleClick("doneWithIt")}
+                onClick={() => handleClick('doneWithIt')}
                 src={doneWithIt}
-                alt="DoneWithIt"
+                alt='DoneWithIt'
               />
             </Container>
             <Container>
               <ChungAndAssociates
-                onClick={() => handleClick("chungAndAssociates")}
+                onClick={() => handleClick('chungAndAssociates')}
                 src={chungAndAssociates}
-                alt="Chung And Associates"
+                alt='Chung And Associates'
               />
             </Container>
           </IconContainer>

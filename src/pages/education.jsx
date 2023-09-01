@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import colors from "../config/colors";
-import textBackground from "../assets/swirlBackground2.png";
+import colors from '../config/colors';
+import SectionHeader from '../components/SectionHeader';
 
 const Wrapper = styled.section`
   display: flex;
@@ -11,38 +11,24 @@ const Wrapper = styled.section`
   padding-bottom: 200px;
 `;
 
-const Section = styled.h1`
-  background: url(${textBackground});
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-align: center;
-  color: ${colors.black};
-  font-size: 34px;
-  margin-top: 50px;
-  margin-bottom: 10px;
-`;
-
 const SchoolName = styled.h2`
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 20px;
   line-height: 15px;
   color: ${colors.black};
   line-height: 22px;
-  margin: 15px 52px 0px 52px;
+  margin: 31px 52px 0px 52px;
 `;
 
 const DegreeType = styled.h3`
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   line-height: 13px;
   margin-top: 10px;
 `;
 
 const ProjectDescription = styled.p`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 50px;
   max-width: 488px;
   font-weight: 300;
@@ -54,20 +40,14 @@ const ProjectDescription = styled.p`
 
 export default function Education() {
   return (
-    <Wrapper>
-      <Section>Education</Section>
-      <SchoolName>Coding Boot Camp</SchoolName>
-      <DegreeType>University of California Irvine 2020</DegreeType>
-      <SchoolName>Bachelor of Science in Mechanical Engineering</SchoolName>
-      <DegreeType>California Baptist University 2012-2016</DegreeType>
-
-      <ProjectDescription>
-        With my friend/classmate, we started the Formula SAE program at our
-        university. We pitched the idea to the president of the school and
-        obtained funding. We worked with several teachers and had all jr design
-        projects assigned to a different vehicle section. The team raced one
-        year after I graduated.{" "}
-      </ProjectDescription>
-    </Wrapper>
+    <>
+      <SectionHeader>Education</SectionHeader>
+      <Wrapper>
+        <SchoolName>Coding Boot Camp</SchoolName>
+        <DegreeType>University of California Irvine 2020</DegreeType>
+        <SchoolName>Bachelor of Science in Mechanical Engineering</SchoolName>
+        <DegreeType>California Baptist University 2012-2016</DegreeType>
+      </Wrapper>{' '}
+    </>
   );
 }

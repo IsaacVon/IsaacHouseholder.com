@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import { device } from '../utils/device';
 import colors from '../config/colors';
 import jobs from '../assets/jobsArray';
+import SectionHeader from '../components/SectionHeader';
 
 const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 16px;
   padding-bottom: 2rem;
 `;
 const ImageContainer = styled.div`
@@ -28,9 +29,9 @@ const JobContainer = styled.section`
   border-radius: 4px;
   border: none;
 
-  @media ${device.mobileL} {
+  /* @media ${device.mobileL} {
     border: 2px solid ${(props) => props.backgroundColor || '#afafaf'};
-  }
+  } */
 `;
 
 const CompanyImage = styled.img`
@@ -52,16 +53,6 @@ const CompanyName = styled.div`
   text-align: center;
   font-size: 26px;
   font-weight: bold;
-`;
-
-const Section = styled.h1`
-  background: url(${colors.backgroundImage});
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-align: center;
-  color: ${colors.black};
-  font-size: 2rem;
 `;
 
 const JobTitle = styled.h3`
@@ -111,11 +102,13 @@ const Job = ({ job }) => (
 
 export default function Experience() {
   return (
-    <Wrapper>
-      <Section>Experience</Section>
-      {jobs.map((job, i) => (
-        <Job key={i} job={job} />
-      ))}
-    </Wrapper>
+    <>
+      <SectionHeader>Experience</SectionHeader>
+      <Wrapper>
+        {jobs.map((job, i) => (
+          <Job key={i} job={job} />
+        ))}
+      </Wrapper>
+    </>
   );
 }

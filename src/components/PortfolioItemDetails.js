@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import colors from "../config/colors";
-import gitHub from "../assets/socialLinks/gitHub.png";
-import textBackground from "../assets/swirlBackground2.png";
-import Button from "./Button";
-import IconLink from "./IconLink";
-import BackButton from "./BackButton";
-import TechIcon from "./techIcon";
+import colors from '../config/colors';
+import gitHub from '../assets/socialLinks/gitHub.png';
+import textBackground from '../assets/swirlBackground2.png';
+import Button from './Button';
+import IconLink from './IconLink';
+import BackButton from './BackButton';
+import TechIcon from './techIcon';
 
 const Wrapper = styled.section`
   display: flex;
@@ -68,7 +68,7 @@ const SectionTitle = styled.h1`
   color: ${colors.black};
   font-size: 21px;
   margin-top: 24px;
-  font-weight: lighter;
+  font-weight: 600;
   line-height: normal;
   text-align: center;
 `;
@@ -78,16 +78,15 @@ const SectionSubTitle = styled.h2`
   text-align: left;
   font-size: 18px;
   margin-top: 40px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: normal;
 `;
 
 const BodyText = styled.p`
   color: ${colors.black};
   font-size: 12px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 300;
+
+  font-weight: 400;
   line-height: 19px;
   text-align: justify;
 `;
@@ -104,8 +103,6 @@ const ProjectLogo = styled.img`
 function PortfolioItemDetails({ projectText, imageToDisplay, setShowDetails }) {
   const { title, description, tech, webUrl, gitHubUrl } = projectText;
 
-
-
   return (
     <Wrapper>
       <Outline>
@@ -113,7 +110,7 @@ function PortfolioItemDetails({ projectText, imageToDisplay, setShowDetails }) {
           <BackButton />
           <PortfolioText>Portfolio</PortfolioText>
         </BackContainer>
-        <ProjectLogo src={imageToDisplay} alt="Logo" />
+        <ProjectLogo src={imageToDisplay} alt='Logo' />
         <TextContainer>
           <SectionTitle>{title}</SectionTitle>
           <SectionSubTitle>Description</SectionSubTitle>
@@ -124,8 +121,8 @@ function PortfolioItemDetails({ projectText, imageToDisplay, setShowDetails }) {
           ))}
         </TextContainer>
         <LinksContainer>
-          <IconLink url={gitHubUrl} img={gitHub} alt="github" size="31px" />
-          <Button title="Visit Site" url={webUrl} />
+          <IconLink url={gitHubUrl} img={gitHub} alt='github' size='31px' />
+          <Button title='Visit Site' url={webUrl} />
         </LinksContainer>
       </Outline>
     </Wrapper>
